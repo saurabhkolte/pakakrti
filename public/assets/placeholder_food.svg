@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <radialGradient id="rusticPlate" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff8eb"/>
+      <stop offset="70%" stop-color="#f0e2cc"/>
+      <stop offset="100%" stop-color="#ddc6a6"/>
+    </radialGradient>
+    <filter id="sketchEffect" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="#efe6d5"/>
+  <rect x="10" y="10" width="380" height="280" fill="none" stroke="#78593c" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <g transform="translate(200, 140)" filter="url(#sketchEffect)">
+    <!-- Cloche cover / Chef hat / Recipe icon -->
+    <ellipse cx="0" cy="30" rx="90" ry="18" fill="url(#rusticPlate)" stroke="#594029" stroke-width="2"/>
+    <path d="M -70 25 C -70 -40, 70 -40, 70 25 Z" fill="#fcf6eb" stroke="#594029" stroke-width="2.5"/>
+    <circle cx="0" cy="-45" r="9" fill="#9e754f" stroke="#594029" stroke-width="2"/>
+    <path d="M -80 32 L 80 32" stroke="#594029" stroke-width="3" stroke-linecap="round"/>
+    <!-- Steam swirls -->
+    <path d="M -25 -55 Q -35 -75 -20 -90 Q -5 -105 -20 -120" fill="none" stroke="#bda080" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 0 -60 Q 15 -80 0 -95 Q -15 -110 0 -125" fill="none" stroke="#bda080" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 25 -55 Q 15 -75 30 -90 Q 45 -105 30 -120" fill="none" stroke="#bda080" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="200" y="245" font-family="'Georgia', serif" font-size="14" fill="#694f37" text-anchor="middle" font-style="italic">
+    Click or drag to add recipe photo
+  </text>
+  <text x="200" y="265" font-family="'Georgia', serif" font-size="11" fill="#9e7e60" text-anchor="middle">
+    JPG, PNG, WebP supported
+  </text>
+</svg>

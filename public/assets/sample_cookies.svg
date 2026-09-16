@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="#fdf8ee"/><stop offset="100%" stop-color="#e4d0b2"/></radialGradient>
+    <radialGradient id="cookie" cx="40%" cy="40%" r="60%"><stop offset="0%" stop-color="#f0b66b"/><stop offset="70%" stop-color="#c98030"/><stop offset="100%" stop-color="#8e5016"/></radialGradient>
+    <radialGradient id="chip" cx="30%" cy="30%" r="70%"><stop offset="0%" stop-color="#4a2615"/><stop offset="100%" stop-color="#221008"/></radialGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <!-- Parchment paper shadow & sheet -->
+  <rect x="30" y="20" width="340" height="260" rx="6" fill="#fffef9" stroke="#d3be9f" stroke-width="1"/>
+  <g transform="translate(180, 150)">
+    <!-- Big cookie back -->
+    <ellipse cx="40" cy="-10" rx="80" ry="65" fill="url(#cookie)" stroke="#693508" stroke-width="2"/>
+    <circle cx="20" cy="-35" r="10" fill="url(#chip)"/>
+    <circle cx="75" cy="-15" r="12" fill="url(#chip)"/>
+    <circle cx="50" cy="15" r="11" fill="url(#chip)"/>
+    <circle cx="90" cy="10" r="8" fill="url(#chip)"/>
+    <circle cx="15" cy="0" r="9" fill="url(#chip)"/>
+    <!-- Big cookie front -->
+    <ellipse cx="-50" cy="15" rx="95" ry="75" fill="url(#cookie)" stroke="#693508" stroke-width="2.5"/>
+    <!-- Molten chocolate chunks -->
+    <path d="M-80 5 Q-65 -5 -50 8 Q-60 20 -80 5 Z" fill="url(#chip)"/>
+    <path d="M-20 -20 Q0 -35 15 -15 Q-5 0 -20 -20 Z" fill="url(#chip)"/>
+    <path d="M-45 30 Q-25 20 -15 40 Q-35 55 -45 30 Z" fill="url(#chip)"/>
+    <circle cx="-95" cy="15" r="9" fill="url(#chip)"/>
+    <circle cx="-70" cy="-25" r="11" fill="url(#chip)"/>
+    <circle cx="-30" cy="-10" r="12" fill="url(#chip)"/>
+    <circle cx="5" cy="35" r="10" fill="url(#chip)"/>
+    <circle cx="-75" cy="45" r="8" fill="url(#chip)"/>
+    <circle cx="-15" cy="60" r="7" fill="url(#chip)"/>
+    <!-- Flaky salt crystals -->
+    <polygon points="-55,5 -52,1 -49,5 -52,9" fill="#ffffff" opacity="0.9"/>
+    <polygon points="-30,-25 -27,-29 -24,-25 -27,-21" fill="#ffffff" opacity="0.9"/>
+    <polygon points="-15,15 -12,11 -9,15 -12,19" fill="#ffffff" opacity="0.9"/>
+    <polygon points="-70,25 -67,21 -64,25 -67,29" fill="#ffffff" opacity="0.9"/>
+    <polygon points="20,-5 23,-9 26,-5 23,-1" fill="#ffffff" opacity="0.9"/>
+    <polygon points="55,-25 58,-29 61,-25 58,-21" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <text x="200" y="265" font-family="'Georgia', serif" font-size="13" fill="#7a522e" text-anchor="middle" letter-spacing="1">RUSTIC BAKERY COLLECTION</text>
+</svg>

@@ -1,0 +1,28 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Runtime PID & Server Logs
+server.pid
+logs/*.log
+!logs/.gitkeep
+
+# SQLite Temporary Journals
+*.db-wal
+*.db-shm
+*.db-journal
+
+# Uploads directory
+!uploads/.gitkeep
+
+# OS / Editor Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.vscode/
+.idea/

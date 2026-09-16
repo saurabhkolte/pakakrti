@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <radialGradient id="bg4" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="#f7efe1"/><stop offset="100%" stop-color="#d6bfa0"/></radialGradient>
+    <radialGradient id="crock" cx="40%" cy="30%" r="70%"><stop offset="0%" stop-color="#8c4a2b"/><stop offset="60%" stop-color="#592b15"/><stop offset="100%" stop-color="#361608"/></radialGradient>
+    <radialGradient id="cheese" cx="45%" cy="40%" r="60%"><stop offset="0%" stop-color="#fffae6"/><stop offset="60%" stop-color="#eed284"/><stop offset="100%" stop-color="#bf7e24"/></radialGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg4)"/>
+  <!-- French ceramic onion soup crock -->
+  <g transform="translate(200, 150)">
+    <!-- Handles -->
+    <circle cx="-105" cy="10" r="18" fill="#592b15" stroke="#361608" stroke-width="2"/>
+    <circle cx="-105" cy="10" r="8" fill="#d6bfa0"/>
+    <circle cx="105" cy="10" r="18" fill="#592b15" stroke="#361608" stroke-width="2"/>
+    <circle cx="105" cy="10" r="8" fill="#d6bfa0"/>
+    <!-- Pot body -->
+    <path d="M-90 -10 C-95 50 -70 85 0 85 C70 85 95 50 90 -10 Z" fill="url(#crock)" stroke="#260f05" stroke-width="2.5"/>
+    <!-- Rim -->
+    <ellipse cx="0" cy="-10" rx="92" ry="30" fill="#421c0b" stroke="#260f05" stroke-width="2"/>
+    <!-- Toasted baguette in broth -->
+    <ellipse cx="0" cy="-12" rx="80" ry="24" fill="#401b08"/>
+    <!-- Molten bubbling Gruyere drape -->
+    <path d="M-75 -12 C-70 -28 70 -28 75 -12 C85 5 70 15 55 5 C45 20 30 10 15 12 C0 22 -20 12 -35 8 C-50 18 -65 5 -75 -12 Z" fill="url(#cheese)" stroke="#804a11" stroke-width="2"/>
+    <!-- Golden blistered broiled spots -->
+    <ellipse cx="-30" cy="-15" rx="14" ry="8" fill="#7a3f0b"/>
+    <ellipse cx="25" cy="-18" rx="16" ry="9" fill="#693205"/>
+    <ellipse cx="-5" cy="-5" rx="18" ry="9" fill="#854a14"/>
+    <ellipse cx="45" cy="-5" rx="10" ry="6" fill="#7a3f0b"/>
+    <ellipse cx="-50" cy="-8" rx="11" ry="6" fill="#612e06"/>
+    <!-- Fresh thyme sprig on top -->
+    <path d="M-20 -18 Q0 -25 20 -20" stroke="#35591c" stroke-width="2" fill="none"/>
+    <circle cx="-15" cy="-20" r="3" fill="#416d23"/>
+    <circle cx="-5" cy="-23" r="3" fill="#416d23"/>
+    <circle cx="5" cy="-22" r="3" fill="#416d23"/>
+    <circle cx="15" cy="-19" r="3" fill="#416d23"/>
+  </g>
+  <text x="200" y="265" font-family="'Georgia', serif" font-size="13" fill="#5e381b" text-anchor="middle" letter-spacing="1">CUISINE DU BISTROT CLASSIQUE</text>
+</svg>

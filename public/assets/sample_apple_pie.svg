@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <radialGradient id="bg6" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="#fdf8ed"/><stop offset="100%" stop-color="#ddc5a4"/></radialGradient>
+    <radialGradient id="crust" cx="40%" cy="40%" r="60%"><stop offset="0%" stop-color="#fae0a2"/><stop offset="70%" stop-color="#d4973b"/><stop offset="100%" stop-color="#965813"/></radialGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg6)"/>
+  <!-- Ceramic pie dish & pie slice -->
+  <g transform="translate(200, 150)">
+    <!-- Whole pie silhouette in back -->
+    <ellipse cx="0" cy="0" rx="130" ry="70" fill="#eed29c" stroke="#804a11" stroke-width="2.5"/>
+    <!-- Fluted crimped edges -->
+    <path d="M-130 0 Q-120 -15 -105 -5 Q-90 -25 -75 -12 Q-55 -30 -35 -16 Q-15 -32 5 -18 Q25 -32 45 -16 Q65 -30 85 -12 Q105 -25 115 -5 Q130 -15 130 0 Q120 15 105 5 Q85 25 65 12 Q45 28 25 14 Q5 30 -15 16 Q-35 30 -55 14 Q-75 28 -95 10 Q-115 22 -130 0 Z" fill="url(#crust)" stroke="#693505" stroke-width="2"/>
+    <!-- Lattice crust strips -->
+    <path d="M-90 -20 L90 20 M-60 -35 L110 5 M-110 -5 L60 35 M-90 20 L90 -20 M-60 35 L110 -5 M-110 5 L60 -35" stroke="#c78326" stroke-width="8" stroke-linecap="round"/>
+    <!-- Steam vents / bubbling apple caramel -->
+    <circle cx="-15" cy="-5" r="4" fill="#7a2608"/>
+    <circle cx="25" cy="5" r="3.5" fill="#7a2608"/>
+    <circle cx="5" cy="15" r="4" fill="#7a2608"/>
+    <circle cx="-30" cy="12" r="3" fill="#7a2608"/>
+    <!-- Sugar crystals on crust -->
+    <polygon points="-45,-15 -42,-18 -39,-15 -42,-12" fill="#fff" opacity="0.9"/>
+    <polygon points="15,-10 18,-13 21,-10 18,-7" fill="#fff" opacity="0.9"/>
+    <polygon points="-5,2 -2,-1 1,2 -2,5" fill="#fff" opacity="0.9"/>
+    <polygon points="40,15 43,12 46,15 43,18" fill="#fff" opacity="0.9"/>
+  </g>
+  <text x="200" y="265" font-family="'Georgia', serif" font-size="13" fill="#613c18" text-anchor="middle" letter-spacing="1">FARMHOUSE HERITAGE RECIPES</text>
+</svg>

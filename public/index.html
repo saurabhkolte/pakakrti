@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pākakṛti — Rustic Recipe Card Maker &amp; Storage</title>
+  <link rel="stylesheet" href="/css/rustic-theme.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>" />
+</head>
+<body>
+
+  <!-- Top App Navigation Bar -->
+  <header class="app-header">
+    <div class="brand-container">
+      <span class="brand-logo">📖</span>
+      <div>
+        <h1 class="brand-title">Pākakṛti</h1>
+        <p class="brand-subtitle">Rustic Recipe Card Maker &amp; Ayurvedic Kitchen Archive</p>
+      </div>
+    </div>
+    <div class="nav-controls">
+      <button id="btnNavCatalog" class="btn-rustic btn-active">
+        🗄️ Recipe Box (<span id="catalogCount">0</span>)
+      </button>
+      <button id="btnNavIngredients" class="btn-rustic">
+        🌿 Ayurvedic &amp; Nutritional Pantry (<span id="pantryCount">0</span>)
+      </button>
+      <button id="btnNavMaker" class="btn-rustic btn-primary">
+        ✍️ Recipe Card Maker
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-content">
+
+    <!-- ====================================================================
+         VIEW 1: RECIPE BOX / CATALOG VIEW
+         ==================================================================== -->
+    <section id="catalogView" class="view-panel active">
+      <div class="catalog-toolbar">
+        <div class="search-filter-group">
+          <input
+            type="search"
+            id="searchInput"
+            class="rustic-input search-input"
+            placeholder="🔍 Search recipes by title, ingredients, cuisine..."
+          />
+          <select id="categoryFilter" class="rustic-select">
+            <option value="all">All Categories</option>
+            <option value="Healing Elixirs & Teas">Healing Elixirs &amp; Teas</option>
+            <option value="Ayurvedic Mains">Ayurvedic Mains</option>
+            <option value="Baking & Desserts">Baking &amp; Desserts</option>
+            <option value="Breads & Baking">Breads &amp; Baking</option>
+            <option value="Pasta & Italian">Pasta &amp; Italian</option>
+            <option value="Soups & Stews">Soups &amp; Stews</option>
+            <option value="Poultry & Mains">Poultry &amp; Mains</option>
+            <option value="Meat & Seafood">Meat &amp; Seafood</option>
+            <option value="Vegetarian">Vegetarian</option>
+            <option value="General">General</option>
+          </select>
+        </div>
+        <button onclick="switchView('maker'); createNewRecipe();" class="btn-rustic btn-primary">
+          ➕ New Recipe Card
+        </button>
+      </div>
+
+      <!-- Catalog Cards Grid -->
+      <div id="catalogGrid" class="recipe-catalog-grid">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VIEW 2: AYURVEDIC & NUTRITIONAL INGREDIENTS ENCYCLOPEDIA VIEW
+         ==================================================================== -->
+    <section id="ingredientsView" class="view-panel">
+      <div class="catalog-toolbar">
+        <div class="search-filter-group">
+          <input
+            type="search"
+            id="ingSearchInput"
+            class="rustic-input search-input"
+            placeholder="🔍 Search in English, Hindi (हल्दी), Marathi (हळद), nutrients (Zinc, Iron)..."
+          />
+          <select id="ingCategoryFilter" class="rustic-select">
+            <option value="all">All Ingredient Categories</option>
+            <option value="Spices & Healing Herbs">Spices &amp; Healing Herbs</option>
+            <option value="Fresh Herbs & Aromatics">Fresh Herbs &amp; Aromatics</option>
+            <option value="Dairy & Ghee">Dairy &amp; Ghee</option>
+            <option value="Lentils & Pulses">Lentils &amp; Pulses</option>
+            <option value="Produce & Vegetables">Produce &amp; Vegetables</option>
+            <option value="Nuts & Seeds">Nuts &amp; Seeds</option>
+            <option value="Baking & Grains">Baking &amp; Grains</option>
+            <option value="Sweeteners & Sugars">Sweeteners &amp; Sugars</option>
+            <option value="Healing Botanicals & Tonics">Healing Botanicals &amp; Tonics</option>
+            <option value="Pantry & Oils">Pantry &amp; Oils</option>
+            <option value="General">General</option>
+          </select>
+        </div>
+        <button id="btnOpenAddIngredientModal" class="btn-rustic btn-primary">
+          ➕ Add New Ingredient
+        </button>
+      </div>
+
+      <!-- Ingredients Grid -->
+      <div id="ingredientsGrid" class="ingredients-catalog-grid">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VIEW 3: RECIPE CARD MAKER & WORKBENCH
+         ==================================================================== -->
+    <section id="makerView" class="view-panel">
+      <div class="maker-container">
+
+        <!-- Toolbar: Sizing, Scaling, Actions -->
+        <div class="maker-toolbar">
+          <div class="maker-tool-group">
+            <span class="maker-label">Card Size:</span>
+            <div class="size-switcher">
+              <button type="button" class="size-btn active" data-size="size-3x5">3" × 5" Classic</button>
+              <button type="button" class="size-btn" data-size="size-4x6">4" × 6" Large</button>
+              <button type="button" class="size-btn" data-size="size-5x7">5" × 7" Keepsake</button>
+            </div>
+            
+            <div class="scale-wrapper">
+              <span class="maker-label">Zoom:</span>
+              <input type="range" id="scaleSlider" class="scale-slider" min="0.6" max="1.3" step="0.05" value="1.0" />
+              <span id="scaleValueText">100%</span>
+            </div>
+          </div>
+
+          <div class="maker-tool-group">
+            <button id="btnSaveRecipe" class="btn-rustic btn-primary">💾 Save Recipe</button>
+            <button id="btnExportJpg" class="btn-rustic">🖼️ Export JPG</button>
+            <button id="btnPrintCard" class="btn-rustic">🖨️ Print Card</button>
+            <button id="btnResetForm" class="btn-rustic">✨ New Blank</button>
+          </div>
+        </div>
+
+        <!-- Workbench Split: Live Card Stage & Companion Quick Editor -->
+        <div class="maker-workbench-split">
+
+          <!-- Left Area: The Scalable Live Recipe Card -->
+          <div class="card-stage-wrapper">
+            
+            <!-- THE RECIPE INDEX CARD -->
+            <article id="recipeCard" class="recipe-index-card size-3x5">
+              <!-- Corner Flourishes -->
+              <span class="card-flourish flourish-tl">❦</span>
+              <span class="card-flourish flourish-tr">❧</span>
+              <span class="card-flourish flourish-bl">❧</span>
+              <span class="card-flourish flourish-br">❦</span>
+
+              <!-- 2-Column Content Grid -->
+              <div class="card-content-grid">
+
+                <!-- ----------------------------------------------------
+                     COLUMN 1 (LEFT): Image, Title, Servings, Prep, Total, Nutrients
+                     ---------------------------------------------------- -->
+                <div class="card-left-column">
+                  
+                  <!-- Recipe Photo Frame -->
+                  <div id="cardPhotoWrapper" class="card-photo-wrapper" title="Click to upload or drag image here">
+                    <img id="cardPhotoImg" class="card-photo-img" src="/assets/placeholder_food.svg" alt="Recipe illustration" />
+                    <span class="photo-overlay-btn">📷 Change Photo</span>
+                  </div>
+
+                  <!-- Title & Category -->
+                  <div class="card-title-container">
+                    <h2 id="cardTitle" class="card-title-text">Rustic Heirloom Recipe</h2>
+                    <span id="cardCategoryBadge" class="card-category-badge">Baking &amp; Desserts</span>
+                  </div>
+
+                  <!-- Metadata Badges: Servings, Prep, Total -->
+                  <div class="card-meta-row">
+                    <div class="meta-pill">
+                      <span class="meta-label">🍽️ Servings</span>
+                      <span id="cardServings" class="meta-value">4</span>
+                    </div>
+                    <div class="meta-pill">
+                      <span class="meta-label">⏱️ Prep</span>
+                      <span id="cardPrepTime" class="meta-value">15 mins</span>
+                    </div>
+                    <div class="meta-pill">
+                      <span class="meta-label">⌛ Total</span>
+                      <span id="cardTotalTime" class="meta-value">45 mins</span>
+                    </div>
+                  </div>
+
+                  <!-- Overflow-Proof Nutrients & Calories Strip (⚡ Cal, 🥩 Pro, 🌾 Carb, 🧈 Fat) -->
+                  <div id="cardNutrientsRow" class="card-nutrients-row">
+                    <div class="nutrient-pill">
+                      <span class="nutrient-label">⚡ Cal</span>
+                      <span id="cardCalories" class="nutrient-val">210</span>
+                    </div>
+                    <div class="nutrient-pill">
+                      <span class="nutrient-label">🥩 Pro</span>
+                      <span id="cardProtein" class="nutrient-val">24g</span>
+                    </div>
+                    <div class="nutrient-pill">
+                      <span class="nutrient-label">🌾 Carb</span>
+                      <span id="cardCarbs" class="nutrient-val">28g</span>
+                    </div>
+                    <div class="nutrient-pill">
+                      <span class="nutrient-label">🧈 Fat</span>
+                      <span id="cardFat" class="nutrient-val">11g</span>
+                    </div>
+                  </div>
+
+                  <!-- Optional Micronutrient & Ayurvedic Ribbon (Iron, Zinc, Dosha Effect) -->
+                  <div id="cardMicroNutrientsRow" class="card-micro-nutrients-row" style="display: none;">
+                    <span id="cardIronPill" class="micro-pill">🩸 Fe: <b id="cardIronVal">-</b></span>
+                    <span id="cardZincPill" class="micro-pill">⚡ Zn: <b id="cardZincVal">-</b></span>
+                    <span id="cardAyurvedicBadge" class="ayur-pill" title="Ayurvedic Note">🌿 <span id="cardAyurText">Tridoshic</span></span>
+                  </div>
+
+                </div>
+
+                <!-- ----------------------------------------------------
+                     COLUMN 2 (RIGHT): Top: Ingredients, Bottom: Method
+                     ---------------------------------------------------- -->
+                <div class="card-right-column">
+                  
+                  <!-- Top: Ingredients List -->
+                  <div class="card-ingredients-section">
+                    <h3 class="section-vintage-header">Ingredients</h3>
+                    <div id="cardIngredientsList" class="ingredients-list-scroll">
+                      <!-- Populated dynamically via app.js -->
+                    </div>
+                  </div>
+
+                  <!-- Bottom: Method / Instructions -->
+                  <div class="card-method-section">
+                    <h3 class="section-vintage-header">Method &amp; Directions</h3>
+                    <div id="cardMethodSteps" class="method-steps-scroll">
+                      <!-- Populated dynamically via app.js -->
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Right Area: Companion Live Editor Drawer -->
+          <div class="editor-form-card">
+            <div class="editor-header">
+              <h2 class="editor-title">✏️ Card Editor</h2>
+              <span style="font-size: 0.8rem; color: #cbbaa5; font-style: italic;">Live Real-Time Sync</span>
+            </div>
+
+            <form id="recipeForm" onsubmit="return false;">
+              <input type="hidden" id="formRecipeId" />
+              <input type="hidden" id="formImageUrl" />
+              <!-- Hidden file picker for image upload -->
+              <input type="file" id="imageFileInput" accept="image/*" style="display:none;" />
+
+              <!-- Title -->
+              <div class="form-group">
+                <label class="form-label" for="formTitle">Recipe Title</label>
+                <input
+                  type="text"
+                  id="formTitle"
+                  class="rustic-input"
+                  style="width: 100%; font-weight: bold;"
+                  placeholder="e.g. Grandma's Chocolate Chip Cookies"
+                  value="Rustic Heirloom Recipe"
+                  required
+                />
+              </div>
+
+              <!-- Category -->
+              <div class="form-group">
+                <label class="form-label" for="formCategory">Category</label>
+                <select id="formCategory" class="rustic-select" style="width: 100%;">
+                  <option value="Healing Elixirs & Teas">Healing Elixirs &amp; Teas</option>
+                  <option value="Ayurvedic Mains">Ayurvedic Mains</option>
+                  <option value="Baking & Desserts">Baking &amp; Desserts</option>
+                  <option value="Breads & Baking">Breads &amp; Baking</option>
+                  <option value="Pasta & Italian">Pasta &amp; Italian</option>
+                  <option value="Soups & Stews">Soups &amp; Stews</option>
+                  <option value="Poultry & Mains">Poultry &amp; Mains</option>
+                  <option value="Meat & Seafood">Meat &amp; Seafood</option>
+                  <option value="Vegetarian">Vegetarian</option>
+                  <option value="General">General</option>
+                </select>
+              </div>
+
+              <!-- Metadata 3-grid: Servings, Prep, Total -->
+              <div class="form-group form-grid-3">
+                <div>
+                  <label class="form-label" for="formServings">Servings</label>
+                  <input type="number" id="formServings" class="rustic-input" style="width: 100%;" min="1" max="100" value="4" />
+                </div>
+                <div>
+                  <label class="form-label" for="formPrepTime">Prep Time</label>
+                  <input type="text" id="formPrepTime" class="rustic-input" style="width: 100%;" value="15 mins" />
+                </div>
+                <div>
+                  <label class="form-label" for="formTotalTime">Total Time</label>
+                  <input type="text" id="formTotalTime" class="rustic-input" style="width: 100%;" value="45 mins" />
+                </div>
+              </div>
+
+              <input type="hidden" id="formCookTime" value="30 mins" />
+
+              <!-- Nutrients Form Group (Editable Calories, Protein, Carbs, Fat) -->
+              <div class="form-group">
+                <label class="form-label">Macronutrients per Serving</label>
+                <div class="form-grid-4">
+                  <div>
+                    <label class="form-sublabel" for="formCalories">⚡ Calories</label>
+                    <input type="text" id="formCalories" class="rustic-input" style="width: 100%;" placeholder="e.g. 210 kcal" />
+                  </div>
+                  <div>
+                    <label class="form-sublabel" for="formProtein">🥩 Protein</label>
+                    <input type="text" id="formProtein" class="rustic-input" style="width: 100%;" placeholder="e.g. 24g" />
+                  </div>
+                  <div>
+                    <label class="form-sublabel" for="formCarbs">🌾 Carbs</label>
+                    <input type="text" id="formCarbs" class="rustic-input" style="width: 100%;" placeholder="e.g. 28g" />
+                  </div>
+                  <div>
+                    <label class="form-sublabel" for="formFat">🧈 Fat</label>
+                    <input type="text" id="formFat" class="rustic-input" style="width: 100%;" placeholder="e.g. 11g" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Micronutrients & Ayurvedic Properties -->
+              <div class="form-group">
+                <label class="form-label">Micronutrients &amp; Ayurvedic Dosha Harmony</label>
+                <div class="form-grid-3">
+                  <div>
+                    <label class="form-sublabel" for="formIron">🩸 Iron (Fe)</label>
+                    <input type="text" id="formIron" class="rustic-input" style="width: 100%;" placeholder="e.g. 3.5 mg" />
+                  </div>
+                  <div>
+                    <label class="form-sublabel" for="formZinc">⚡ Zinc (Zn)</label>
+                    <input type="text" id="formZinc" class="rustic-input" style="width: 100%;" placeholder="e.g. 1.2 mg" />
+                  </div>
+                  <div>
+                    <label class="form-sublabel" for="formFiber">🌾 Fiber</label>
+                    <input type="text" id="formFiber" class="rustic-input" style="width: 100%;" placeholder="e.g. 4g" />
+                  </div>
+                </div>
+                <div style="margin-top: 0.4rem;">
+                  <label class="form-sublabel" for="formAyurvedicNote">🌿 Ayurvedic Dosha / Therapeutic Note</label>
+                  <input type="text" id="formAyurvedicNote" class="rustic-input" style="width: 100%;" placeholder="e.g. Tridoshic | Kindles Agni, boosts vital Ojas" />
+                </div>
+              </div>
+
+              <!-- Ingredients Section with Autocomplete -->
+              <div class="form-group">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                  <label class="form-label" style="margin-bottom:0;">Ingredients (with Autocomplete)</label>
+                  <button type="button" id="btnAddIngredient" class="btn-rustic" style="padding: 2px 8px; font-size: 0.75rem;">
+                    ➕ Add Row
+                  </button>
+                </div>
+                <div id="ingredientsEditorList" class="dynamic-row-list">
+                  <!-- Dynamic Rows -->
+                </div>
+              </div>
+
+              <!-- Method Steps Section -->
+              <div class="form-group">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                  <label class="form-label" style="margin-bottom:0;">Method / Steps</label>
+                  <button type="button" id="btnAddStep" class="btn-rustic" style="padding: 2px 8px; font-size: 0.75rem;">
+                    ➕ Add Step
+                  </button>
+                </div>
+                <div id="stepsEditorList" class="dynamic-row-list">
+                  <!-- Dynamic Steps -->
+                </div>
+              </div>
+
+              <!-- Description & Notes -->
+              <div class="form-group">
+                <label class="form-label" for="formDescription">Description / Heritage Story</label>
+                <textarea id="formDescription" class="rustic-input" rows="2" style="width: 100%;" placeholder="Brief history, Ayurvedic virtue or tasting notes..."></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="formNotes">Chef &amp; Vaidya Secret Tips</label>
+                <input type="text" id="formNotes" class="rustic-input" style="width: 100%;" placeholder="e.g. Add black pepper to boost curcumin bioavailability..." />
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================================
+       MODAL 1: ADD / EDIT AYURVEDIC INGREDIENT MODAL
+       ==================================================================== -->
+  <div id="ingredientModal" class="modal-backdrop">
+    <div class="modal-box modal-box-large">
+      <div class="modal-header">
+        <h3 id="ingredientModalTitle">🌿 Add Ingredient to Pantry</h3>
+        <button type="button" class="modal-close-btn" id="btnIngredientModalClose">&times;</button>
+      </div>
+
+      <form id="ingredientForm" onsubmit="return false;">
+        <input type="hidden" id="modalIngId" />
+        
+        <!-- Trilingual Names Grid -->
+        <div class="form-grid-3">
+          <div class="form-group">
+            <label class="form-label" for="modalIngNameEn">Name in English *</label>
+            <input type="text" id="modalIngNameEn" class="rustic-input" style="width:100%;" placeholder="e.g. Turmeric" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modalIngNameHi">Name in Hindi (हिंदी)</label>
+            <input type="text" id="modalIngNameHi" class="rustic-input devanagari-font" style="width:100%;" placeholder="e.g. हल्दी" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modalIngNameMr">Name in Marathi (मराठी)</label>
+            <input type="text" id="modalIngNameMr" class="rustic-input devanagari-font" style="width:100%;" placeholder="e.g. हळद" />
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label class="form-label" for="modalIngCategory">Category</label>
+            <select id="modalIngCategory" class="rustic-select" style="width:100%;">
+              <option value="Spices & Healing Herbs">Spices &amp; Healing Herbs</option>
+              <option value="Fresh Herbs & Aromatics">Fresh Herbs &amp; Aromatics</option>
+              <option value="Dairy & Ghee">Dairy &amp; Ghee</option>
+              <option value="Lentils & Pulses">Lentils &amp; Pulses</option>
+              <option value="Produce & Vegetables">Produce &amp; Vegetables</option>
+              <option value="Nuts & Seeds">Nuts &amp; Seeds</option>
+              <option value="Baking & Grains">Baking &amp; Grains</option>
+              <option value="Sweeteners & Sugars">Sweeteners &amp; Sugars</option>
+              <option value="Healing Botanicals & Tonics">Healing Botanicals &amp; Tonics</option>
+              <option value="Pantry & Oils">Pantry &amp; Oils</option>
+              <option value="General">General</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modalIngCalories">Calories / 100g</label>
+            <input type="text" id="modalIngCalories" class="rustic-input" style="width:100%;" placeholder="e.g. 354 kcal" />
+          </div>
+        </div>
+
+        <!-- Nutritional Profile Grid: Zinc, Iron, Calcium, Fiber, Protein -->
+        <div class="form-group">
+          <label class="form-label">Nutritional Values (per 100g)</label>
+          <div class="form-grid-5">
+            <div>
+              <label class="form-sublabel" for="modalIngZinc">⚡ Zinc (Zn)</label>
+              <input type="text" id="modalIngZinc" class="rustic-input" style="width:100%;" placeholder="e.g. 4.3 mg" />
+            </div>
+            <div>
+              <label class="form-sublabel" for="modalIngIron">🩸 Iron (Fe)</label>
+              <input type="text" id="modalIngIron" class="rustic-input" style="width:100%;" placeholder="e.g. 41.4 mg" />
+            </div>
+            <div>
+              <label class="form-sublabel" for="modalIngCalcium">🦴 Calcium</label>
+              <input type="text" id="modalIngCalcium" class="rustic-input" style="width:100%;" placeholder="e.g. 182 mg" />
+            </div>
+            <div>
+              <label class="form-sublabel" for="modalIngProtein">🥩 Protein</label>
+              <input type="text" id="modalIngProtein" class="rustic-input" style="width:100%;" placeholder="e.g. 7.8g" />
+            </div>
+            <div>
+              <label class="form-sublabel" for="modalIngFiber">🌾 Fiber</label>
+              <input type="text" id="modalIngFiber" class="rustic-input" style="width:100%;" placeholder="e.g. 21g" />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalIngMicro">Active Compounds &amp; Micronutrients</label>
+          <input type="text" id="modalIngMicro" class="rustic-input" style="width:100%;" placeholder="e.g. Curcumin, Manganese, Potassium, Vitamin B6" />
+        </div>
+
+        <!-- Ayurvedic Properties -->
+        <div class="form-group">
+          <label class="form-label">Ayurvedic Properties &amp; Dosha Balancing</label>
+          <div class="form-grid-3">
+            <div>
+              <label class="form-sublabel" for="modalIngDosha">Tridosha Effect</label>
+              <input type="text" id="modalIngDosha" class="rustic-input" style="width:100%;" placeholder="e.g. Vata ↓ | Pitta = | Kapha ↓" />
+            </div>
+            <div>
+              <label class="form-sublabel" for="modalIngRasa">Rasa (Taste)</label>
+              <input type="text" id="modalIngRasa" class="rustic-input" style="width:100%;" placeholder="e.g. Tikta (Bitter), Katu (Pungent)" />
+            </div>
+            <div>
+              <label class="form-sublabel" for="modalIngVirya">Virya (Potency)</label>
+              <input type="text" id="modalIngVirya" class="rustic-input" style="width:100%;" placeholder="e.g. Ushna (Heating) / Sheeta (Cooling)" />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalIngAyurveda">Ayurvedic Significance &amp; Traditional Healing Uses</label>
+          <textarea id="modalIngAyurveda" class="rustic-input" rows="3" style="width:100%;" placeholder="e.g. Known as Vishwabhesaja. Ignites digestive fire (Agni), cleanses blood, enhances vital Ojas..."></textarea>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" id="btnIngredientModalCancel" class="btn-rustic">Cancel</button>
+          <button type="button" id="btnIngredientModalSave" class="btn-rustic btn-primary">💾 Save Ingredient</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL 2: PRINT OPTIONS MODAL
+       ==================================================================== -->
+  <div id="printModal" class="modal-backdrop">
+    <div class="modal-box">
+      <h3>🖨️ Print Recipe Card</h3>
+      <p style="color: #d1bda2; font-size: 0.9rem; margin-bottom: 1rem;">
+        Choose your preferred print format. Both standard index card stock and regular paper cutting options are supported.
+      </p>
+
+      <div class="form-group">
+        <label class="form-label" for="printModeSelect">Select Format:</label>
+        <select id="printModeSelect" class="rustic-select" style="width: 100%;">
+          <option value="direct-3x5">🗃️ Direct 3" × 5" Index Card Stock (Landscape)</option>
+          <option value="letter-trim-marks">✂️ Standard US Letter / A4 with Cutting Guidelines</option>
+        </select>
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" id="btnPrintCancel" class="btn-rustic">Cancel</button>
+        <button type="button" id="btnPrintConfirm" class="btn-rustic btn-primary">🖨️ Open Print Dialog</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/js/exporter.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
