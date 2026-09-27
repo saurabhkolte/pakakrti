@@ -363,11 +363,13 @@ class RecipeAppHandler(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-Type", content_type)
             self.send_header("Content-Length", str(len(content)))
-            # Cache static assets but not HTML
-            if target_file.suffix in [".svg", ".png", ".jpg", ".css", ".js"]:
-                self.send_header("Cache-Control", "public, max-age=3600")
-            else:
+            # This is a local development server.  Never cache application
+            # styles or scripts, otherwise an already-open browser can keep an
+            # older UI after the server is restarted.
+            if target_file.suffix in [".css", ".js", ".html"]:
                 self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+            else:
+                self.send_header("Cache-Control", "public, max-age=3600")
             self._send_cors_headers()
             self.end_headers()
             self.wfile.write(content)

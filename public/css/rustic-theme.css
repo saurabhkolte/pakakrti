@@ -459,6 +459,8 @@ body {
   transform-origin: center center;
   transition: width 0.25s ease, height 0.25s ease, transform 0.15s ease;
   user-select: text;
+  /* Hard clip: nothing escapes the card boundary */
+  overflow: hidden;
 }
 
 /* Aged Deckled / Worn Border Accent */
@@ -504,13 +506,14 @@ body {
 /* Card Inner Layout: 2 Columns */
 .card-content-grid {
   display: grid;
-  grid-template-columns: 42% 58%;
+  grid-template-columns: 40% 60%;
   height: 100%;
-  padding: 1.1rem 1.25rem;
-  gap: 1.1rem;
+  padding: 0.85rem 1rem;
+  gap: 0.9rem;
   position: relative;
   z-index: 2;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* ------------------------------------------------------------------------------
@@ -522,18 +525,18 @@ body {
   height: 100%;
   min-height: 0;
   border-right: 1px dashed var(--vintage-border);
-  padding-right: 1rem;
+  padding-right: 0.85rem;
   overflow: hidden;
-  justify-content: space-between;
+  gap: 0.2rem;
 }
 
 /* Image Zone with vintage photo frame and tape/corners effect */
 .card-photo-wrapper {
   position: relative;
   width: 100%;
-  flex: 0 1 125px;
-  min-height: 85px;
-  max-height: 140px;
+  flex: 0 1 100px;
+  min-height: 70px;
+  max-height: 105px;
   background: #eeddc3;
   border: 2.5px solid #ffffff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.18), inset 0 0 8px rgba(0,0,0,0.05);
@@ -584,16 +587,16 @@ body {
 /* Recipe Title on Card */
 .card-title-container {
   flex: 0 0 auto;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
 }
 
 .card-title-text {
   font-family: 'Georgia', 'Garamond', serif;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--ink-deep);
   line-height: 1.15;
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.1rem;
   letter-spacing: -0.2px;
   word-break: break-word;
   max-height: 2.3em;
@@ -621,17 +624,17 @@ body {
 .card-meta-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.25rem;
+  gap: 0.2rem;
   flex: 0 0 auto;
   border-top: 1px solid var(--vintage-border);
-  padding-top: 0.35rem;
+  padding-top: 0.25rem;
 }
 
 .meta-pill {
   background: rgba(255, 255, 255, 0.55);
   border: 1px solid rgba(187, 159, 124, 0.6);
   border-radius: 3px;
-  padding: 0.2rem 0.25rem;
+  padding: 0.15rem 0.2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -662,10 +665,10 @@ body {
 .card-nutrients-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0.25rem;
+  gap: 0.2rem;
   flex: 0 0 auto;
-  margin-top: 0.35rem;
-  padding-top: 0.35rem;
+  margin-top: 0.2rem;
+  padding-top: 0.2rem;
   border-top: 1px dashed rgba(187, 159, 124, 0.6);
 }
 
@@ -673,7 +676,7 @@ body {
   background: rgba(253, 250, 243, 0.85);
   border: 1px solid rgba(187, 159, 124, 0.55);
   border-radius: 3px;
-  padding: 0.15rem 0.15rem;
+  padding: 0.1rem 0.1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -715,10 +718,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.2rem;
   flex: 0 0 auto;
-  margin-top: 0.25rem;
-  padding-top: 0.25rem;
+  margin-top: 0.18rem;
+  padding-top: 0.18rem;
   border-top: 1px dotted rgba(187, 159, 124, 0.5);
   overflow: hidden;
 }
@@ -787,13 +790,14 @@ body {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  font-size: 0.74rem;
+  font-size: 0.68rem;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-weight: 700;
   color: var(--vintage-burgundy);
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.2rem;
   position: relative;
+  flex-shrink: 0;
 }
 
 .section-vintage-header::after {
@@ -806,35 +810,27 @@ body {
 
 /* Top: Ingredients Section */
 .card-ingredients-section {
-  flex: 0 0 45%;
-  min-height: 38%;
-  max-height: 48%;
+  flex: 0 0 43%;
+  min-height: 36%;
+  max-height: 46%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.35rem;
   overflow: hidden;
 }
 
 .ingredients-list-scroll {
   flex: 1;
-  overflow-y: auto;
-  padding-right: 4px;
-}
-
-.ingredients-list-scroll::-webkit-scrollbar {
-  width: 4px;
-}
-.ingredients-list-scroll::-webkit-scrollbar-thumb {
-  background: var(--vintage-border);
-  border-radius: 2px;
+  overflow: hidden;
+  padding-right: 2px;
 }
 
 .ingredient-item {
   display: flex;
   align-items: baseline;
-  font-size: 0.75rem;
-  line-height: 1.35;
-  padding: 1.5px 0;
+  font-size: 0.68rem;
+  line-height: 1.25;
+  padding: 1px 0;
   color: var(--ink-primary);
   border-bottom: 0.5px dotted rgba(187, 159, 124, 0.4);
 }
@@ -874,25 +870,17 @@ body {
 
 .method-steps-scroll {
   flex: 1;
-  overflow-y: auto;
-  padding-right: 4px;
-}
-
-.method-steps-scroll::-webkit-scrollbar {
-  width: 4px;
-}
-.method-steps-scroll::-webkit-scrollbar-thumb {
-  background: var(--vintage-border);
-  border-radius: 2px;
+  overflow: hidden;
+  padding-right: 2px;
 }
 
 .method-step-item {
   display: flex;
   align-items: flex-start;
-  gap: 0.4rem;
-  font-size: 0.73rem;
-  line-height: 1.35;
-  margin-bottom: 0.35rem;
+  gap: 0.35rem;
+  font-size: 0.66rem;
+  line-height: 1.25;
+  margin-bottom: 0.25rem;
   color: var(--ink-primary);
 }
 
@@ -1322,6 +1310,28 @@ body {
   margin-bottom: 0.75rem;
 }
 
+.ing-nutrition-basis {
+  margin: 0 0 0.5rem;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid rgba(143, 52, 38, 0.35);
+  border-radius: 3px;
+  background: rgba(143, 52, 38, 0.07);
+  color: var(--vintage-burgundy);
+  font-size: 0.7rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.ing-nutrition-basis span,
+.ing-nutrition-basis strong {
+  display: block;
+}
+
+.ing-nutrition-basis strong {
+  font-size: 0.76rem;
+  margin-top: 0.1rem;
+}
+
 .ing-nutr-item {
   background: rgba(253, 250, 243, 0.9);
   border: 1px solid rgba(187, 159, 124, 0.55);
@@ -1423,11 +1433,13 @@ body {
     box-shadow: none !important;
     padding: 0 !important;
     min-height: auto !important;
+    overflow: hidden !important;
   }
 
   .main-content {
     padding: 0 !important;
     margin: 0 !important;
+    max-width: none !important;
   }
 
   /* 3x5 Landscape Page Rule when printing directly on 3x5 index card */
@@ -1443,6 +1455,19 @@ body {
     break-inside: avoid;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
+    /* Ensure card never overflows the physical page */
+    overflow: hidden !important;
+  }
+
+  /* Force all scrollable inner sections to clip (no scrollbars in print) */
+  .ingredients-list-scroll,
+  .method-steps-scroll,
+  .card-right-column,
+  .card-left-column,
+  .card-content-grid,
+  .card-ingredients-section,
+  .card-method-section {
+    overflow: hidden !important;
   }
 
   /* When printing on 3x5 index cards directly */

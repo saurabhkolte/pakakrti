@@ -93,6 +93,7 @@ function initDOM() {
   DOM.cardTitle = document.getElementById("cardTitle");
   DOM.cardCategoryBadge = document.getElementById("cardCategoryBadge");
   DOM.cardServings = document.getElementById("cardServings");
+  DOM.cardYieldGrams = document.getElementById("cardYieldGrams");
   DOM.cardPrepTime = document.getElementById("cardPrepTime");
   DOM.cardTotalTime = document.getElementById("cardTotalTime");
   DOM.cardIngredientsList = document.getElementById("cardIngredientsList");
@@ -118,6 +119,7 @@ function initDOM() {
   DOM.formTitle = document.getElementById("formTitle");
   DOM.formCategory = document.getElementById("formCategory");
   DOM.formServings = document.getElementById("formServings");
+  DOM.formYieldGrams = document.getElementById("formYieldGrams");
   DOM.formPrepTime = document.getElementById("formPrepTime");
   DOM.formCookTime = document.getElementById("formCookTime");
   DOM.formTotalTime = document.getElementById("formTotalTime");
@@ -195,6 +197,7 @@ function attachEventListeners() {
     [DOM.formTitle, () => syncTitle()],
     [DOM.formCategory, () => syncCategory()],
     [DOM.formServings, () => syncServings()],
+    [DOM.formYieldGrams, () => syncServings()],
     [DOM.formPrepTime, () => syncTimes()],
     [DOM.formTotalTime, () => syncTimes()],
     [DOM.formCalories, () => syncNutrients()],
@@ -355,6 +358,8 @@ function renderIngredientsCatalog(ingredients) {
   ingredients.forEach((ing) => {
     const card = document.createElement("div");
     card.className = "ingredient-card-item";
+    const nutritionBasis = ing.nutrition_basis || "per 100 g ingredient";
+    const basisAmount = nutritionBasis.replace(/^per\s+/i, "");
 
     const hiBadge = ing.name_hi
       ? `<span class="badge-lang badge-hi devanagari-font" title="Hindi">🇮🇳 ${escapeHtml(ing.name_hi)}</span>`
@@ -395,14 +400,18 @@ function renderIngredientsCatalog(ingredients) {
         <p class="ing-ayur-desc">${escapeHtml(ing.ayurvedic_significance || "Nourishing and restorative culinary ingredient.")}</p>
       </div>
 
+      <div class="ing-nutrition-basis">
+        <span>Nutrition basis: <b>${escapeHtml(nutritionBasis)}</b></span>
+        <strong>Every ${escapeHtml(basisAmount)} contains:</strong>
+      </div>
       <!-- Nutritional Profile (Zinc, Iron, Calcium, Calories, Protein, Fiber) -->
       <div class="ing-nutrient-grid">
         <div class="ing-nutr-item">
-          <span class="ing-nutr-lbl">⚡ Zinc (Zn)</span>
+          <span class="ing-nutr-lbl">⚡ Zinc</span>
           <span class="ing-nutr-val highlight-zinc">${escapeHtml(ing.zinc || "-")}</span>
         </div>
         <div class="ing-nutr-item">
-          <span class="ing-nutr-lbl">🩸 Iron (Fe)</span>
+          <span class="ing-nutr-lbl">🩸 Iron</span>
           <span class="ing-nutr-val highlight-iron">${escapeHtml(ing.iron || "-")}</span>
         </div>
         <div class="ing-nutr-item">
@@ -670,6 +679,7 @@ function renderCatalog(recipes) {
         <p class="catalog-desc">${escapeHtml(recipe.description || "An authentic family heirloom recipe.")}</p>
         <div class="catalog-meta">
           <span class="catalog-meta-item">🍽️ ${recipe.servings || 4} Servings</span>
+          ${recipe.yield_grams ? `<span class="catalog-meta-item">⚖️ ${escapeHtml(String(recipe.yield_grams))} g yield</span>` : ""}
           <span class="catalog-meta-item">⏱️ ${recipe.total_time || "30 mins"}</span>
           <span class="catalog-meta-item">📝 ${(recipe.ingredients || []).length} Ing.</span>
           ${recipe.calories ? `<span class="catalog-meta-item" style="color:var(--vintage-burgundy); font-weight:700;">⚡ ${escapeHtml(recipe.calories)}</span>` : ""}
@@ -733,6 +743,7 @@ function createNewRecipe() {
     title: "Golden Turmeric Milk (Haldi Doodh)",
     category: "Healing Elixirs & Teas",
     servings: 2,
+    yield_grams: 500,
     prep_time: "5 mins",
     cook_time: "10 mins",
     total_time: "15 mins",
@@ -769,6 +780,7 @@ function populateFormWithRecipe(recipe) {
   DOM.formTitle.value = recipe.title || "";
   DOM.formCategory.value = recipe.category || "General";
   DOM.formServings.value = recipe.servings || 4;
+  DOM.formYieldGrams.value = recipe.yield_grams || "";
   DOM.formPrepTime.value = recipe.prep_time || "15 mins";
   DOM.formCookTime.value = recipe.cook_time || "30 mins";
   DOM.formTotalTime.value = recipe.total_time || "45 mins";
@@ -886,6 +898,8 @@ function syncCategory() {
 
 function syncServings() {
   DOM.cardServings.textContent = DOM.formServings.value || 4;
+  const yieldGrams = DOM.formYieldGrams.value.trim();
+  DOM.cardYieldGrams.textContent = yieldGrams ? `${yieldGrams} g` : "—";
 }
 
 function syncTimes() {
@@ -911,6 +925,7 @@ function syncIngredientsToCard() {
       : "";
 
     if (name) {
+      const ayurName = row.dataset.ayurName || "";
       const li = document.createElement("div");
       li.className = "ingredient-item";
 
@@ -919,6 +934,7 @@ function syncIngredientsToCard() {
         <span class="ing-bullet">❦</span>
         ${amtUnitStr ? `<span class="ing-amount-unit">${escapeHtml(amtUnitStr)}</span>` : ""}
         <span class="ing-name">${escapeHtml(name)}</span>
+        ${ayurName ? `<span class="ing-ayur-name">(${escapeHtml(ayurName)})</span>` : ""}
         ${notes ? `<span class="ing-notes">(${escapeHtml(notes)})</span>` : ""}
       `;
       DOM.cardIngredientsList.appendChild(li);
@@ -1184,6 +1200,7 @@ function collectFormData() {
     title: DOM.formTitle.value.trim() || "Untitled Recipe",
     category: DOM.formCategory.value,
     servings: parseInt(DOM.formServings.value) || 4,
+    yield_grams: parseInt(DOM.formYieldGrams.value) || 0,
     prep_time: DOM.formPrepTime.value.trim() || "15 mins",
     cook_time: DOM.formCookTime.value.trim() || "30 mins",
     total_time: DOM.formTotalTime.value.trim() || "45 mins",

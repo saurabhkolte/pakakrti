@@ -29,6 +29,9 @@ A self-contained web application for crafting, editing, storing, printing, and e
   - Stored locally in `data/recipes.db` with SQLite WAL mode.
   - Pre-seeded with 6 starter recipes (*Grandma's Chocolate Chip Cookies*, *Artisan Rosemary Focaccia*, *Roman Spaghetti Carbonara*, *French Onion Soup*, *Creamy Tuscan Garlic Chicken*, and *Old-Fashioned Apple Pie*).
 
+- **IFCT 2017 pantry import**:
+  - Includes a repeatable importer for the 542 foods in the Indian Food Composition Tables 2017 dataset. Imported entries retain their IFCT food code, scientific and regional names, source, and per-100 g nutrient basis.
+
 - **Export & Print**:
   - **Export as JPG**: Generates a high-resolution (300 DPI index card print ready) JPEG image download with a single click.
   - **Printable**:
@@ -89,6 +92,31 @@ pakakrti/
 │   └── assets/            # Vintage recipe SVGs and parchment textures
 └── README.md
 ```
+
+## Importing IFCT 2017 foods
+
+The repository's `prepopulated_ingredients` table is the pantry catalogue; its
+existing nutritional display fields are text values used by the recipe UI.
+External data is additionally identified by `source` and `source_code`, with
+`scientific_name`, `regional_names`, `nutrition_basis`, and `energy_kj` retained
+for provenance and accurate refreshes. Recipe ingredient lines remain separate
+in the `ingredients` table because they belong to a specific recipe.
+
+To import or refresh the IFCT source (an idempotent upsert):
+
+```bash
+python3 scripts/import_ifct2017.py
+```
+
+To import a previously downloaded CSV without using the network:
+
+```bash
+python3 scripts/import_ifct2017.py --source /path/to/compositions.csv
+```
+
+IFCT values are per 100 g edible portion. The importer converts energy from kJ
+to kcal and minerals from g to mg for the existing pantry cards. Source:
+[nodef/ifct2017](https://github.com/nodef/ifct2017) (AGPL-3.0).
 
 ---
 

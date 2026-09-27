@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pākakṛti — Rustic Recipe Card Maker &amp; Storage</title>
-  <link rel="stylesheet" href="/css/rustic-theme.css" />
+  <link rel="stylesheet" href="/css/rustic-theme.css?v=nutrition-basis-2" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>" />
 </head>
 <body>
@@ -22,9 +22,7 @@
       <button id="btnNavCatalog" class="btn-rustic btn-active">
         🗄️ Recipe Box (<span id="catalogCount">0</span>)
       </button>
-      <button id="btnNavIngredients" class="btn-rustic">
-        🌿 Ayurvedic &amp; Nutritional Pantry (<span id="pantryCount">0</span>)
-      </button>
+      <button id="btnNavIngredients" class="btn-rustic">🌿 Pantry (<span id="pantryCount">0</span>)</button>
       <button id="btnNavMaker" class="btn-rustic btn-primary">
         ✍️ Recipe Card Maker
       </button>
@@ -181,6 +179,10 @@
                       <span id="cardServings" class="meta-value">4</span>
                     </div>
                     <div class="meta-pill">
+                      <span class="meta-label">⚖️ Yield</span>
+                      <span id="cardYieldGrams" class="meta-value">—</span>
+                    </div>
+                    <div class="meta-pill">
                       <span class="meta-label">⏱️ Prep</span>
                       <span id="cardPrepTime" class="meta-value">15 mins</span>
                     </div>
@@ -291,12 +293,18 @@
                 </select>
               </div>
 
-              <!-- Metadata 3-grid: Servings, Prep, Total -->
+              <!-- Recipe yield, servings, and timing -->
               <div class="form-group form-grid-3">
                 <div>
                   <label class="form-label" for="formServings">Servings</label>
                   <input type="number" id="formServings" class="rustic-input" style="width: 100%;" min="1" max="100" value="4" />
                 </div>
+                <div>
+                  <label class="form-label" for="formYieldGrams">Recipe Yield (g)</label>
+                  <input type="number" id="formYieldGrams" class="rustic-input" style="width: 100%;" min="1" step="1" placeholder="e.g. 500" />
+                </div>
+              </div>
+              <div class="form-group form-grid-3">
                 <div>
                   <label class="form-label" for="formPrepTime">Prep Time</label>
                   <input type="text" id="formPrepTime" class="rustic-input" style="width: 100%;" value="15 mins" />
@@ -456,7 +464,7 @@
 
         <!-- Nutritional Profile Grid: Zinc, Iron, Calcium, Fiber, Protein -->
         <div class="form-group">
-          <label class="form-label">Nutritional Values (per 100g)</label>
+          <label class="form-label">Nutritional Values (per 100 g ingredient)</label>
           <div class="form-grid-5">
             <div>
               <label class="form-sublabel" for="modalIngZinc">⚡ Zinc (Zn)</label>
@@ -544,7 +552,7 @@
   </div>
 
   <!-- Scripts -->
-  <script src="/js/exporter.js"></script>
-  <script src="/js/app.js"></script>
+  <script src="/js/exporter.js?v=nutrition-basis-2"></script>
+  <script src="/js/app.js?v=nutrition-basis-2"></script>
 </body>
 </html>

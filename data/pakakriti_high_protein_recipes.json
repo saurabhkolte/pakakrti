@@ -1,0 +1,4277 @@
+{
+  "$schema_version": "2.0.0",
+  "metadata": {
+    "app_name": "Pākakṛti",
+    "last_updated": "2026-09-15T21:00:00Z",
+    "total_recipes": 20,
+    "total_pantry_ingredients": 48
+  },
+  "recipes": [
+    {
+      "id": "rec_01h9a8b1",
+      "title": "Golden Turmeric Milk (Haldi Doodh)",
+      "description": "Authentic Ayurvedic healing elixir crafted with spiced cow milk, golden turmeric, green cardamom, black pepper, and pure desi ghee.",
+      "category": "Healing Elixirs & Teas",
+      "servings": 2,
+      "yield_grams": 500,
+      "times": {
+        "prep": "5 mins",
+        "cook": "10 mins",
+        "total": "15 mins"
+      },
+      "nutrition_per_serving": {
+        "calories": "145 kcal",
+        "protein": "5g",
+        "carbs": "12g",
+        "fat": "8g",
+        "fiber": "1g",
+        "iron": "3.5 mg",
+        "zinc": "1.2 mg"
+      },
+      "ayurvedic_profile": {
+        "dosha_balance": "Tridoshic (Vata ↓ | Pitta = | Kapha ↓)",
+        "therapeutic_note": "Boosts vital Ojas, kindles Agni gently, promotes deep restful sleep."
+      },
+      "image_url": "/assets/placeholder_food.svg",
+      "chef_notes": "Always add a pinch of freshly crushed black pepper to activate curcumin absorption by up to 2000%.",
+      "ingredients": [
+        {
+          "order": 1,
+          "name": "Whole Milk (Cow Doodh)",
+          "amount": "2",
+          "unit": "cups",
+          "notes": "boiled fresh",
+          "pantry_ref_id": "ing_milk"
+        },
+        {
+          "order": 2,
+          "name": "Turmeric (हल्दी / हळद)",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "pure aromatic powder",
+          "pantry_ref_id": "ing_turmeric"
+        },
+        {
+          "order": 3,
+          "name": "Black Peppercorns (Kali Mirch)",
+          "amount": "1/4",
+          "unit": "tsp",
+          "notes": "freshly crushed",
+          "pantry_ref_id": "ing_black_pepper"
+        },
+        {
+          "order": 4,
+          "name": "Cardamom (Green Elaichi)",
+          "amount": "2",
+          "unit": "pods",
+          "notes": "lightly crushed",
+          "pantry_ref_id": "ing_cardamom"
+        },
+        {
+          "order": 5,
+          "name": "Pure Desi Cow Ghee",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "stirred in hot",
+          "pantry_ref_id": "ing_ghee"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Pour milk into a heavy-bottomed brass or stainless steel saucepan over medium heat with turmeric and crushed cardamom pods."
+        },
+        {
+          "step": 2,
+          "text": "Bring the golden milk to a gentle simmer for 5 to 7 minutes to let the botanical aromas infuse."
+        },
+        {
+          "step": 3,
+          "text": "Turn off heat, stir in pure desi cow ghee and a pinch of black pepper; strain and sip mindfully while warm."
+        }
+      ],
+      "created_at": "2026-09-14T20:50:00Z",
+      "updated_at": "2026-09-15T19:30:00Z"
+    },
+    {
+      "id": "rec_01h9a8c1",
+      "title": "Moong Dal Paneer Khichdi (Sattvic One-Pot)",
+      "description": "The most sattvic complete meal in the Ayurvedic kitchen — split yellow mung, fragrant basmati and fresh paneer simmered into a soft, tridoshic one-pot bowl. No onion, no garlic.",
+      "category": "Sattvic Protein Mains",
+      "servings": 3,
+      "yield_grams": 1200,
+      "times": {
+        "prep": "15 mins",
+        "cook": "25 mins",
+        "total": "40 mins"
+      },
+      "nutrition_per_serving": {
+        "calories": "478 kcal",
+        "protein": "25g",
+        "carbs": "56g",
+        "fat": "17g",
+        "fiber": "8g",
+        "iron": "3.9 mg",
+        "zinc": "2.6 mg"
+      },
+      "ayurvedic_profile": {
+        "dosha_balance": "Tridoshic (Vata ↓ | Pitta ↓ | Kapha =)",
+        "therapeutic_note": "Classic Kitchari — the supreme Pathya Ahara. Easy on a weak Agni, rebuilds tissue (Dhatu) after illness or fasting, and clears Ama without depleting strength."
+      },
+      "image_url": "/assets/placeholder_food.svg",
+      "chef_notes": "Dry-roast the moong dal for two minutes before washing — it deepens the aroma and makes the khichdi markedly easier to digest. Keep it loose; it thickens as it rests.",
+      "ingredients": [
+        {
+          "order": 1,
+          "name": "Split Yellow Moong Dal",
+          "amount": "3/4",
+          "unit": "cup",
+          "notes": "dry-roasted, rinsed",
+          "pantry_ref_id": "ing_moong_dal"
+        },
+        {
+          "order": 2,
+          "name": "Basmati Rice",
+          "amount": "1/2",
+          "unit": "cup",
+          "notes": "soaked 20 mins",
+          "pantry_ref_id": "ing_basmati_rice"
+        },
+        {
+          "order": 3,
+          "name": "Fresh Paneer",
+          "amount": "150",
+          "unit": "g",
+          "notes": "cubed, added last",
+          "pantry_ref_id": "ing_paneer"
+        },
+        {
+          "order": 4,
+          "name": "Pure Desi Cow Ghee",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": "for the tempering",
+          "pantry_ref_id": "ing_ghee"
+        },
+        {
+          "order": 5,
+          "name": "Cumin Seeds (Jeera)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "crackled in ghee",
+          "pantry_ref_id": "ing_cumin"
+        },
+        {
+          "order": 6,
+          "name": "Asafoetida (Hing)",
+          "amount": "1",
+          "unit": "pinch",
+          "notes": "sattvic stand-in for onion and garlic",
+          "pantry_ref_id": "ing_asafoetida"
+        },
+        {
+          "order": 7,
+          "name": "Fresh Ginger",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "finely grated",
+          "pantry_ref_id": "ing_ginger"
+        },
+        {
+          "order": 8,
+          "name": "Turmeric",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "powder",
+          "pantry_ref_id": "ing_turmeric"
+        },
+        {
+          "order": 9,
+          "name": "Carrot",
+          "amount": "1",
+          "unit": "medium",
+          "notes": "small dice",
+          "pantry_ref_id": "ing_carrot"
+        },
+        {
+          "order": 10,
+          "name": "Rock Salt (Sendha Namak)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "to taste",
+          "pantry_ref_id": "ing_rock_salt"
+        },
+        {
+          "order": 11,
+          "name": "Fresh Coriander Leaves",
+          "amount": "3",
+          "unit": "tbsp",
+          "notes": "chopped, to finish",
+          "pantry_ref_id": "ing_coriander_leaves"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Heat ghee in a pressure cooker, crackle the cumin seeds, then add asafoetida and grated ginger and let them bloom for ten seconds."
+        },
+        {
+          "step": 2,
+          "text": "Stir in turmeric and diced carrot, then add the drained moong dal and rice. Toss for a minute so every grain is glossed with ghee."
+        },
+        {
+          "step": 3,
+          "text": "Pour in 4 cups of hot water with rock salt, close the cooker and cook for 3 whistles on medium heat, or simmer covered for 25 minutes."
+        },
+        {
+          "step": 4,
+          "text": "Release pressure, whisk the khichdi soft, then fold in the paneer cubes and let them warm through off the heat for 3 minutes so they stay tender."
+        },
+        {
+          "step": 5,
+          "text": "Finish with coriander leaves and an extra half-teaspoon of raw ghee on each serving. Eat warm and freshly made."
+        }
+      ],
+      "created_at": "2026-09-15T21:00:00Z",
+      "updated_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "rec_01h9a8c2",
+      "title": "Sprouted Moong & Peanut Protein Chaat (Sattvic)",
+      "description": "Living food at its best — home-sprouted whole mung tossed raw with roasted peanuts, fresh coconut and lemon. A no-cook, no-onion, no-garlic protein plate.",
+      "category": "Sattvic Salads & Sprouts",
+      "servings": 2,
+      "yield_grams": 550,
+      "times": {
+        "prep": "15 mins",
+        "cook": "5 mins",
+        "total": "20 mins (plus 16 hrs sprouting)"
+      },
+      "nutrition_per_serving": {
+        "calories": "352 kcal",
+        "protein": "19g",
+        "carbs": "36g",
+        "fat": "15g",
+        "fiber": "12g",
+        "iron": "4.6 mg",
+        "zinc": "2.4 mg"
+      },
+      "ayurvedic_profile": {
+        "dosha_balance": "Kapha ↓ | Pitta ↓ | Vata ↑ (mild)",
+        "therapeutic_note": "Sprouting converts heavy Guru pulses into light Laghu food and multiplies Prana. Lightly steam the sprouts if Vata is aggravated or digestion feels cold."
+      },
+      "image_url": "/assets/placeholder_food.svg",
+      "chef_notes": "Sprout tails of 3 to 5 mm carry the most Prana — beyond that the beans turn bitter. A 30-second steam takes the raw edge off without killing the crunch.",
+      "ingredients": [
+        {
+          "order": 1,
+          "name": "Whole Green Moong",
+          "amount": "1",
+          "unit": "cup",
+          "notes": "sprouted overnight, tails just showing",
+          "pantry_ref_id": "ing_whole_moong"
+        },
+        {
+          "order": 2,
+          "name": "Raw Peanuts",
+          "amount": "1/3",
+          "unit": "cup",
+          "notes": "dry-roasted, skins rubbed off",
+          "pantry_ref_id": "ing_peanuts"
+        },
+        {
+          "order": 3,
+          "name": "Fresh Coconut",
+          "amount": "3",
+          "unit": "tbsp",
+          "notes": "freshly grated",
+          "pantry_ref_id": "ing_coconut"
+        },
+        {
+          "order": 4,
+          "name": "Cumin Seeds (Jeera)",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "roasted and coarsely ground",
+          "pantry_ref_id": "ing_cumin"
+        },
+        {
+          "order": 5,
+          "name": "Green Chilli",
+          "amount": "1",
+          "unit": "small",
+          "notes": "deseeded, minced",
+          "pantry_ref_id": "ing_green_chilli"
+        },
+        {
+          "order": 6,
+          "name": "Fresh Ginger",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "grated",
+          "pantry_ref_id": "ing_ginger"
+        },
+        {
+          "order": 7,
+          "name": "Lemon",
+          "amount": "1",
+          "unit": "medium",
+          "notes": "juiced",
+          "pantry_ref_id": "ing_lemon"
+        },
+        {
+          "order": 8,
+          "name": "Rock Salt (Sendha Namak)",
+          "amount": "3/4",
+          "unit": "tsp",
+          "notes": "to taste",
+          "pantry_ref_id": "ing_rock_salt"
+        },
+        {
+          "order": 9,
+          "name": "Fresh Coriander Leaves",
+          "amount": "1/4",
+          "unit": "cup",
+          "notes": "chopped fine",
+          "pantry_ref_id": "ing_coriander_leaves"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Soak whole moong for 8 hours, drain thoroughly, then tie in damp muslin and leave in a warm dark place for 8 to 12 hours until tails appear."
+        },
+        {
+          "step": 2,
+          "text": "Steam the sprouts for 30 to 60 seconds if you want them gentler on Vata, then spread out to cool completely so they do not go soggy."
+        },
+        {
+          "step": 3,
+          "text": "Dry-roast the peanuts until the skins split, cool, rub the skins away and crush them coarsely."
+        },
+        {
+          "step": 4,
+          "text": "Toss sprouts, peanuts, coconut, ginger, green chilli and roasted cumin powder together in a wide bowl."
+        },
+        {
+          "step": 5,
+          "text": "Add lemon juice and rock salt only at the moment of serving, fold in coriander, and eat within the hour while the Prana is still high."
+        }
+      ],
+      "created_at": "2026-09-15T21:00:00Z",
+      "updated_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "rec_01h9a8c3",
+      "title": "Palak Paneer (No Onion, No Garlic)",
+      "description": "Iron-rich spinach pureed silky and folded around fresh paneer, built entirely on a hing-ginger base in the true sattvic manner.",
+      "category": "Sattvic Protein Mains",
+      "servings": 3,
+      "yield_grams": 900,
+      "times": {
+        "prep": "15 mins",
+        "cook": "20 mins",
+        "total": "35 mins"
+      },
+      "nutrition_per_serving": {
+        "calories": "312 kcal",
+        "protein": "18g",
+        "carbs": "12g",
+        "fat": "22g",
+        "fiber": "4g",
+        "iron": "4.8 mg",
+        "zinc": "2.1 mg"
+      },
+      "ayurvedic_profile": {
+        "dosha_balance": "Pitta ↓ | Kapha ↓ | Vata ↑ (softened by ghee)",
+        "therapeutic_note": "Rakta-building (blood nourishing) through leafy Tikta rasa, balanced by the Madhura sweetness of paneer so the greens do not aggravate Vata."
+      },
+      "image_url": "/assets/placeholder_food.svg",
+      "chef_notes": "Blanch the spinach for no more than 90 seconds and shock it in cold water — this is what keeps the gravy emerald instead of olive. Never boil the puree after blending.",
+      "ingredients": [
+        {
+          "order": 1,
+          "name": "Fresh Spinach (Palak)",
+          "amount": "400",
+          "unit": "g",
+          "notes": "stems trimmed, washed thrice",
+          "pantry_ref_id": "ing_spinach"
+        },
+        {
+          "order": 2,
+          "name": "Fresh Paneer",
+          "amount": "200",
+          "unit": "g",
+          "notes": "cubed",
+          "pantry_ref_id": "ing_paneer"
+        },
+        {
+          "order": 3,
+          "name": "Pure Desi Cow Ghee",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": "for tempering",
+          "pantry_ref_id": "ing_ghee"
+        },
+        {
+          "order": 4,
+          "name": "Cumin Seeds (Jeera)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "crackled",
+          "pantry_ref_id": "ing_cumin"
+        },
+        {
+          "order": 5,
+          "name": "Asafoetida (Hing)",
+          "amount": "1",
+          "unit": "pinch",
+          "notes": "bloomed in ghee",
+          "pantry_ref_id": "ing_asafoetida"
+        },
+        {
+          "order": 6,
+          "name": "Fresh Ginger",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": "julienned",
+          "pantry_ref_id": "ing_ginger"
+        },
+        {
+          "order": 7,
+          "name": "Green Chilli",
+          "amount": "1",
+          "unit": "small",
+          "notes": "slit",
+          "pantry_ref_id": "ing_green_chilli"
+        },
+        {
+          "order": 8,
+          "name": "Tomato",
+          "amount": "1",
+          "unit": "medium",
+          "notes": "finely chopped",
+          "pantry_ref_id": "ing_tomato"
+        },
+        {
+          "order": 9,
+          "name": "Coriander Seed Powder",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "freshly ground",
+          "pantry_ref_id": "ing_coriander_seeds"
+        },
+        {
+          "order": 10,
+          "name": "Turmeric",
+          "amount": "1/4",
+          "unit": "tsp",
+          "notes": "powder",
+          "pantry_ref_id": "ing_turmeric"
+        },
+        {
+          "order": 11,
+          "name": "Whole Milk",
+          "amount": "3",
+          "unit": "tbsp",
+          "notes": "stirred in at the end",
+          "pantry_ref_id": "ing_milk"
+        },
+        {
+          "order": 12,
+          "name": "Dried Fenugreek Leaves (Methi)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "crushed between palms",
+          "pantry_ref_id": "ing_fenugreek_leaves"
+        },
+        {
+          "order": 13,
+          "name": "Rock Salt (Sendha Namak)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "to taste",
+          "pantry_ref_id": "ing_rock_salt"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Blanch the spinach in boiling water for 90 seconds, drain and plunge straight into ice water, then blend to a coarse puree with the green chilli."
+        },
+        {
+          "step": 2,
+          "text": "Warm ghee in a kadai, crackle cumin, add asafoetida and ginger juliennes and fry until fragrant, about 20 seconds."
+        },
+        {
+          "step": 3,
+          "text": "Add the tomato with turmeric and coriander powder and cook down until the ghee separates at the edges, roughly 6 minutes."
+        },
+        {
+          "step": 4,
+          "text": "Lower the flame, stir in the spinach puree with rock salt and warm it through for just 3 minutes — do not let it boil hard."
+        },
+        {
+          "step": 5,
+          "text": "Fold in paneer cubes and milk, crush the fenugreek leaves over the top, cover and rest off the heat for 5 minutes before serving with bajra roti."
+        }
+      ],
+      "created_at": "2026-09-15T21:00:00Z",
+      "updated_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "rec_01h9a8c4",
+      "title": "Kabuli Chana & Quinoa Protein Bowl",
+      "description": "Slow-simmered chickpeas over fluffy quinoa with a cooling curd swirl — a complete amino acid profile in one bowl, built without onion or garlic.",
+      "category": "Balanced Protein Bowls",
+      "servings": 3,
+      "yield_grams": 900,
+      "times": {
+        "prep": "15 mins",
+        "cook": "35 mins",
+        "total": "50 mins (plus 8 hrs soaking)"
+      },
+      "nutrition_per_serving": {
+        "calories": "512 kcal",
+        "protein": "22g",
+        "carbs": "72g",
+        "fat": "13g",
+        "fiber": "15g",
+        "iron": "5.8 mg",
+        "zinc": "3.4 mg"
+      },
+      "ayurvedic_profile": {
+        "dosha_balance": "Pitta ↓ | Kapha ↓ | Vata ↑ (offset by ghee and hing)",
+        "therapeutic_note": "Quinoa is light (Laghu) and drying, which stops the chickpeas from sitting heavy. The hing, ginger and ajwain together neutralise the Vata-provoking gas of Kabuli chana."
+      },
+      "image_url": "/assets/placeholder_food.svg",
+      "chef_notes": "Rinse quinoa under running water for a full minute to strip the bitter saponin coat, then dry-roast it before adding water — the grains stay separate instead of clumping.",
+      "ingredients": [
+        {
+          "order": 1,
+          "name": "Kabuli Chana (White Chickpeas)",
+          "amount": "1",
+          "unit": "cup",
+          "notes": "soaked 8 hrs, pressure cooked soft",
+          "pantry_ref_id": "ing_kabuli_chana"
+        },
+        {
+          "order": 2,
+          "name": "Quinoa",
+          "amount": "3/4",
+          "unit": "cup",
+          "notes": "rinsed and dry-roasted",
+          "pantry_ref_id": "ing_quinoa"
+        },
+        {
+          "order": 3,
+          "name": "Tomato",
+          "amount": "2",
+          "unit": "medium",
+          "notes": "pureed",
+          "pantry_ref_id": "ing_tomato"
+        },
+        {
+          "order": 4,
+          "name": "Pure Desi Cow Ghee",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": "for tempering",
+          "pantry_ref_id": "ing_ghee"
+        },
+        {
+          "order": 5,
+          "name": "Cumin Seeds (Jeera)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "crackled",
+          "pantry_ref_id": "ing_cumin"
+        },
+        {
+          "order": 6,
+          "name": "Asafoetida (Hing)",
+          "amount": "1",
+          "unit": "pinch",
+          "notes": "sattvic base",
+          "pantry_ref_id": "ing_asafoetida"
+        },
+        {
+          "order": 7,
+          "name": "Carom Seeds (Ajwain)",
+          "amount": "1/4",
+          "unit": "tsp",
+          "notes": "digestive aid",
+          "pantry_ref_id": "ing_ajwain"
+        },
+        {
+          "order": 8,
+          "name": "Fresh Ginger",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": "grated",
+          "pantry_ref_id": "ing_ginger"
+        },
+        {
+          "order": 9,
+          "name": "Coriander Seed Powder",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": "freshly ground",
+          "pantry_ref_id": "ing_coriander_seeds"
+        },
+        {
+          "order": 10,
+          "name": "Turmeric",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "powder",
+          "pantry_ref_id": "ing_turmeric"
+        },
+        {
+          "order": 11,
+          "name": "Fresh Curd (Dahi)",
+          "amount": "1/2",
+          "unit": "cup",
+          "notes": "whisked, spooned over each bowl",
+          "pantry_ref_id": "ing_curd"
+        },
+        {
+          "order": 12,
+          "name": "Lemon",
+          "amount": "1/2",
+          "unit": "medium",
+          "notes": "juiced, at the end",
+          "pantry_ref_id": "ing_lemon"
+        },
+        {
+          "order": 13,
+          "name": "Rock Salt (Sendha Namak)",
+          "amount": "1.5",
+          "unit": "tsp",
+          "notes": "to taste",
+          "pantry_ref_id": "ing_rock_salt"
+        },
+        {
+          "order": 14,
+          "name": "Fresh Coriander Leaves",
+          "amount": "1/4",
+          "unit": "cup",
+          "notes": "to finish",
+          "pantry_ref_id": "ing_coriander_leaves"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Cook the roasted quinoa in 1.5 cups water with a pinch of rock salt for 15 minutes, then rest covered for 5 minutes and fork it loose."
+        },
+        {
+          "step": 2,
+          "text": "Heat ghee, crackle cumin and ajwain, add hing and ginger, then pour in the tomato puree with turmeric and coriander powder."
+        },
+        {
+          "step": 3,
+          "text": "Cook the masala until it darkens and the ghee separates, about 8 minutes — this step alone decides the depth of the dish."
+        },
+        {
+          "step": 4,
+          "text": "Add the cooked chickpeas with a cup of their cooking liquor and simmer for 12 minutes, mashing a few against the pan to thicken the gravy."
+        },
+        {
+          "step": 5,
+          "text": "Season, squeeze over lemon, and build each bowl with quinoa at the base, chana above, a spoon of whisked curd and a shower of coriander."
+        }
+      ],
+      "created_at": "2026-09-15T21:00:00Z",
+      "updated_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "rec_01h9a8c5",
+      "title": "Soya Chunk & Vegetable Curry",
+      "description": "The single highest-protein vegetarian curry in the collection — textured soy nuggets simmered in a spiced curd and tomato gravy.",
+      "category": "High Protein Mains",
+      "servings": 3,
+      "yield_grams": 1000,
+      "times": {
+        "prep": "15 mins",
+        "cook": "25 mins",
+        "total": "40 mins"
+      },
+      "nutrition_per_serving": {
+        "calories": "318 kcal",
+        "protein": "29g",
+        "carbs": "23g",
+        "fat": "10g",
+        "fiber": "9g",
+        "iron": "8.4 mg",
+        "zinc": "3.1 mg"
+      },
+      "ayurvedic_profile": {
+        "dosha_balance": "Vata ↑ | Pitta = | Kapha ↑ (moderate portions advised)",
+        "therapeutic_note": "Brimhana and tissue-building, but Guru (heavy) and Abhishyandi. Best eaten at midday when Agni peaks, and always with warming ginger and ajwain to keep it moving."
+      },
+      "image_url": "/assets/placeholder_food.svg",
+      "chef_notes": "Boil the chunks for 4 minutes, then rinse and squeeze them out three times in cold water. Skipping this leaves the raw beany note that puts most people off soya.",
+      "ingredients": [
+        {
+          "order": 1,
+          "name": "Soya Chunks (Nutri Nuggets)",
+          "amount": "150",
+          "unit": "g",
+          "notes": "boiled, rinsed and squeezed dry",
+          "pantry_ref_id": "ing_soya_chunks"
+        },
+        {
+          "order": 2,
+          "name": "Tomato",
+          "amount": "3",
+          "unit": "medium",
+          "notes": "pureed",
+          "pantry_ref_id": "ing_tomato"
+        },
+        {
+          "order": 3,
+          "name": "Fresh Curd (Dahi)",
+          "amount": "1/2",
+          "unit": "cup",
+          "notes": "whisked smooth, added off heat",
+          "pantry_ref_id": "ing_curd"
+        },
+        {
+          "order": 4,
+          "name": "Pure Desi Cow Ghee",
+          "amount": "1.5",
+          "unit": "tbsp",
+          "notes": "for the masala",
+          "pantry_ref_id": "ing_ghee"
+        },
+        {
+          "order": 5,
+          "name": "Cumin Seeds (Jeera)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "crackled",
+          "pantry_ref_id": "ing_cumin"
+        },
+        {
+          "order": 6,
+          "name": "Carom Seeds (Ajwain)",
+          "amount": "1/4",
+          "unit": "tsp",
+          "notes": "digestive",
+          "pantry_ref_id": "ing_ajwain"
+        },
+        {
+          "order": 7,
+          "name": "Fresh Ginger",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": "grated",
+          "pantry_ref_id": "ing_ginger"
+        },
+        {
+          "order": 8,
+          "name": "Green Chilli",
+          "amount": "2",
+          "unit": "small",
+          "notes": "slit",
+          "pantry_ref_id": "ing_green_chilli"
+        },
+        {
+          "order": 9,
+          "name": "Carrot",
+          "amount": "1",
+          "unit": "medium",
+          "notes": "diced",
+          "pantry_ref_id": "ing_carrot"
+        },
+        {
+          "order": 10,
+          "name": "Turmeric",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "powder",
+          "pantry_ref_id": "ing_turmeric"
+        },
+        {
+          "order": 11,
+          "name": "Coriander Seed Powder",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": "freshly ground",
+          "pantry_ref_id": "ing_coriander_seeds"
+        },
+        {
+          "order": 12,
+          "name": "Black Peppercorns (Kali Mirch)",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "coarsely cracked",
+          "pantry_ref_id": "ing_black_pepper"
+        },
+        {
+          "order": 13,
+          "name": "Rock Salt (Sendha Namak)",
+          "amount": "1.5",
+          "unit": "tsp",
+          "notes": "to taste",
+          "pantry_ref_id": "ing_rock_salt"
+        },
+        {
+          "order": 14,
+          "name": "Fresh Coriander Leaves",
+          "amount": "3",
+          "unit": "tbsp",
+          "notes": "to finish",
+          "pantry_ref_id": "ing_coriander_leaves"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Boil the soya chunks in salted water for 4 minutes, drain, then rinse and squeeze them dry three times until the water runs clear."
+        },
+        {
+          "step": 2,
+          "text": "Heat ghee, crackle cumin and ajwain, add ginger and green chilli, then add the diced carrot and sauté for 3 minutes."
+        },
+        {
+          "step": 3,
+          "text": "Pour in the tomato puree with turmeric and coriander powder and cook until thick and glossy, around 10 minutes."
+        },
+        {
+          "step": 4,
+          "text": "Fold in the squeezed soya chunks with a cup of hot water and simmer covered for 10 minutes so they drink up the masala."
+        },
+        {
+          "step": 5,
+          "text": "Take the pan off the flame, let it cool for a minute, then stir in the whisked curd slowly so it does not split. Finish with cracked pepper and coriander."
+        }
+      ],
+      "created_at": "2026-09-15T21:00:00Z",
+      "updated_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "rec_01h9a8c6",
+      "title": "Paneer-Stuffed Besan Chilla",
+      "description": "Gram flour pancakes folded around seasoned paneer — twenty-seven grams of protein on a breakfast plate in under half an hour.",
+      "category": "High Protein Breakfast",
+      "servings": 2,
+      "yield_grams": 500,
+      "times": {
+        "prep": "10 mins",
+        "cook": "20 mins",
+        "total": "30 mins"
+      },
+      "nutrition_per_serving": {
+        "calories": "468 kcal",
+        "protein": "27g",
+        "carbs": "38g",
+        "fat": "22g",
+        "fiber": "7g",
+        "iron": "4.2 mg",
+        "zinc": "2.8 mg"
+      },
+      "ayurvedic_profile": {
+        "dosha_balance": "Kapha ↓ | Pitta = | Vata ↑ (mild)",
+        "therapeutic_note": "Besan is Kashaya and drying, which offsets the Guru richness of paneer. Ajwain in the batter is the traditional corrective for gram flour's tendency to bloat."
+      },
+      "image_url": "/assets/placeholder_food.svg",
+      "chef_notes": "Rest the batter 10 minutes and keep it the consistency of thin cream. A hot pan wiped with ghee, then the heat dropped to medium, is what gives lacy edges instead of a thick pancake.",
+      "ingredients": [
+        {
+          "order": 1,
+          "name": "Gram Flour (Besan)",
+          "amount": "1",
+          "unit": "cup",
+          "notes": "sifted",
+          "pantry_ref_id": "ing_besan"
+        },
+        {
+          "order": 2,
+          "name": "Fresh Paneer",
+          "amount": "150",
+          "unit": "g",
+          "notes": "crumbled for the filling",
+          "pantry_ref_id": "ing_paneer"
+        },
+        {
+          "order": 3,
+          "name": "Fresh Curd (Dahi)",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": "whisked into the batter",
+          "pantry_ref_id": "ing_curd"
+        },
+        {
+          "order": 4,
+          "name": "Carom Seeds (Ajwain)",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "crushed",
+          "pantry_ref_id": "ing_ajwain"
+        },
+        {
+          "order": 5,
+          "name": "Turmeric",
+          "amount": "1/4",
+          "unit": "tsp",
+          "notes": "powder",
+          "pantry_ref_id": "ing_turmeric"
+        },
+        {
+          "order": 6,
+          "name": "Fresh Ginger",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "grated",
+          "pantry_ref_id": "ing_ginger"
+        },
+        {
+          "order": 7,
+          "name": "Green Chilli",
+          "amount": "1",
+          "unit": "small",
+          "notes": "minced",
+          "pantry_ref_id": "ing_green_chilli"
+        },
+        {
+          "order": 8,
+          "name": "Fresh Coriander Leaves",
+          "amount": "1/3",
+          "unit": "cup",
+          "notes": "chopped, split between batter and filling",
+          "pantry_ref_id": "ing_coriander_leaves"
+        },
+        {
+          "order": 9,
+          "name": "Black Peppercorns (Kali Mirch)",
+          "amount": "1/4",
+          "unit": "tsp",
+          "notes": "freshly cracked, in the filling",
+          "pantry_ref_id": "ing_black_pepper"
+        },
+        {
+          "order": 10,
+          "name": "Pure Desi Cow Ghee",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": "for the griddle",
+          "pantry_ref_id": "ing_ghee"
+        },
+        {
+          "order": 11,
+          "name": "Rock Salt (Sendha Namak)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "split between batter and filling",
+          "pantry_ref_id": "ing_rock_salt"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Whisk besan with curd, ajwain, turmeric, half the salt and about 3/4 cup water into a lump-free batter the thickness of thin cream. Rest 10 minutes."
+        },
+        {
+          "step": 2,
+          "text": "Mix the crumbled paneer with ginger, green chilli, cracked pepper, the remaining salt and half the coriander."
+        },
+        {
+          "step": 3,
+          "text": "Heat a flat tawa, wipe with ghee, pour a ladle of batter and spread it outward in a spiral. Lower the flame to medium."
+        },
+        {
+          "step": 4,
+          "text": "When the top sets and the edges lift, scatter a quarter of the paneer filling over one half, fold the chilla over and press gently."
+        },
+        {
+          "step": 5,
+          "text": "Cook 45 seconds a side until golden. Repeat for four chillas and serve hot with fresh coriander-coconut chutney."
+        }
+      ],
+      "created_at": "2026-09-15T21:00:00Z",
+      "updated_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "rec_01h9a8c7",
+      "title": "Sattvic Rajma with Brown Rice",
+      "description": "Kashmiri-style kidney beans built on ginger, hing and fennel-scented tomato rather than onion and garlic, served over nutty brown rice.",
+      "category": "Sattvic Protein Mains",
+      "servings": 3,
+      "yield_grams": 1200,
+      "times": {
+        "prep": "15 mins",
+        "cook": "45 mins",
+        "total": "1 hr (plus 8 hrs soaking)"
+      },
+      "nutrition_per_serving": {
+        "calories": "524 kcal",
+        "protein": "20g",
+        "carbs": "86g",
+        "fat": "10g",
+        "fiber": "18g",
+        "iron": "6.1 mg",
+        "zinc": "3.2 mg"
+      },
+      "ayurvedic_profile": {
+        "dosha_balance": "Pitta ↓ | Kapha ↓ | Vata ↑↑ (needs the ghee and hing)",
+        "therapeutic_note": "Rajma is the heaviest of the common pulses. Long soaking, discarded soak water and generous Ushna spices are what make it Pathya rather than Ama-forming."
+      },
+      "image_url": "/assets/placeholder_food.svg",
+      "chef_notes": "Throw away the soaking water and add a small piece of kombu or a pinch of extra hing to the cooking pot — both cut the oligosaccharides that cause discomfort.",
+      "ingredients": [
+        {
+          "order": 1,
+          "name": "Rajma (Red Kidney Beans)",
+          "amount": "1",
+          "unit": "cup",
+          "notes": "soaked 8 hrs, soak water discarded",
+          "pantry_ref_id": "ing_rajma"
+        },
+        {
+          "order": 2,
+          "name": "Brown Rice",
+          "amount": "1",
+          "unit": "cup",
+          "notes": "soaked 30 mins, cooked separately",
+          "pantry_ref_id": "ing_brown_rice"
+        },
+        {
+          "order": 3,
+          "name": "Tomato",
+          "amount": "3",
+          "unit": "medium",
+          "notes": "pureed",
+          "pantry_ref_id": "ing_tomato"
+        },
+        {
+          "order": 4,
+          "name": "Pure Desi Cow Ghee",
+          "amount": "1.5",
+          "unit": "tbsp",
+          "notes": "for tempering",
+          "pantry_ref_id": "ing_ghee"
+        },
+        {
+          "order": 5,
+          "name": "Cumin Seeds (Jeera)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "crackled",
+          "pantry_ref_id": "ing_cumin"
+        },
+        {
+          "order": 6,
+          "name": "Asafoetida (Hing)",
+          "amount": "1/4",
+          "unit": "tsp",
+          "notes": "generous, replaces onion and garlic",
+          "pantry_ref_id": "ing_asafoetida"
+        },
+        {
+          "order": 7,
+          "name": "Fresh Ginger",
+          "amount": "1.5",
+          "unit": "tbsp",
+          "notes": "grated",
+          "pantry_ref_id": "ing_ginger"
+        },
+        {
+          "order": 8,
+          "name": "Coriander Seed Powder",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": "freshly ground",
+          "pantry_ref_id": "ing_coriander_seeds"
+        },
+        {
+          "order": 9,
+          "name": "Turmeric",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "powder",
+          "pantry_ref_id": "ing_turmeric"
+        },
+        {
+          "order": 10,
+          "name": "Cinnamon",
+          "amount": "1",
+          "unit": "inch",
+          "notes": "one small stick",
+          "pantry_ref_id": "ing_cinnamon"
+        },
+        {
+          "order": 11,
+          "name": "Dried Fenugreek Leaves (Methi)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "crushed in at the end",
+          "pantry_ref_id": "ing_fenugreek_leaves"
+        },
+        {
+          "order": 12,
+          "name": "Rock Salt (Sendha Namak)",
+          "amount": "1.5",
+          "unit": "tsp",
+          "notes": "added after the beans soften",
+          "pantry_ref_id": "ing_rock_salt"
+        },
+        {
+          "order": 13,
+          "name": "Fresh Coriander Leaves",
+          "amount": "1/4",
+          "unit": "cup",
+          "notes": "to finish",
+          "pantry_ref_id": "ing_coriander_leaves"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Pressure cook the drained rajma with fresh water, turmeric and the cinnamon stick for 6 to 7 whistles until a bean crushes effortlessly between two fingers."
+        },
+        {
+          "step": 2,
+          "text": "Meanwhile cook the brown rice in 2.5 cups water for about 35 minutes, then rest it covered."
+        },
+        {
+          "step": 3,
+          "text": "Heat ghee in a separate pan, crackle cumin, add the hing and ginger, then the tomato puree and coriander powder."
+        },
+        {
+          "step": 4,
+          "text": "Fry the masala patiently for 10 minutes until it turns brick-dark and pulls away from the pan."
+        },
+        {
+          "step": 5,
+          "text": "Tip the cooked beans and their liquor into the masala, add salt, and simmer uncovered for 15 minutes, mashing a ladleful of beans to thicken it naturally."
+        },
+        {
+          "step": 6,
+          "text": "Crush the fenugreek leaves over the pot, rest 5 minutes, and serve ladled over the brown rice with coriander."
+        }
+      ],
+      "created_at": "2026-09-15T21:00:00Z",
+      "updated_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "rec_01h9a8c8",
+      "title": "Panchmel Dal (Five-Lentil Rajasthani Dal)",
+      "description": "Five pulses in one pot — toor, moong, urad, chana and masoor — for a broader amino acid spread than any single dal can give.",
+      "category": "Sattvic Protein Mains",
+      "servings": 4,
+      "yield_grams": 1500,
+      "times": {
+        "prep": "10 mins",
+        "cook": "30 mins",
+        "total": "40 mins"
+      },
+      "nutrition_per_serving": {
+        "calories": "292 kcal",
+        "protein": "16g",
+        "carbs": "34g",
+        "fat": "10g",
+        "fiber": "9g",
+        "iron": "4.4 mg",
+        "zinc": "2.3 mg"
+      },
+      "ayurvedic_profile": {
+        "dosha_balance": "Tridoshic (Vata = | Pitta ↓ | Kapha ↓)",
+        "therapeutic_note": "Mixing five pulses balances the individual excesses of each — the cooling Kashaya of chana against the warming Madhura of urad — producing a dal that suits nearly every constitution."
+      },
+      "image_url": "/assets/placeholder_food.svg",
+      "chef_notes": "The second tempering poured over at the table is not optional. Ghee bloomed with hing and cumin right before serving is what separates a good dal from a forgettable one.",
+      "ingredients": [
+        {
+          "order": 1,
+          "name": "Toor Dal (Pigeon Pea)",
+          "amount": "1/4",
+          "unit": "cup",
+          "notes": "rinsed",
+          "pantry_ref_id": "ing_toor_dal"
+        },
+        {
+          "order": 2,
+          "name": "Split Yellow Moong Dal",
+          "amount": "1/4",
+          "unit": "cup",
+          "notes": "rinsed",
+          "pantry_ref_id": "ing_moong_dal"
+        },
+        {
+          "order": 3,
+          "name": "Urad Dal (Split Black Gram)",
+          "amount": "1/4",
+          "unit": "cup",
+          "notes": "rinsed",
+          "pantry_ref_id": "ing_urad_dal"
+        },
+        {
+          "order": 4,
+          "name": "Chana Dal (Split Bengal Gram)",
+          "amount": "1/4",
+          "unit": "cup",
+          "notes": "soaked 30 mins",
+          "pantry_ref_id": "ing_chana_dal"
+        },
+        {
+          "order": 5,
+          "name": "Masoor Dal (Red Lentil)",
+          "amount": "1/4",
+          "unit": "cup",
+          "notes": "rinsed",
+          "pantry_ref_id": "ing_masoor_dal"
+        },
+        {
+          "order": 6,
+          "name": "Pure Desi Cow Ghee",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": "split across two temperings",
+          "pantry_ref_id": "ing_ghee"
+        },
+        {
+          "order": 7,
+          "name": "Cumin Seeds (Jeera)",
+          "amount": "1.5",
+          "unit": "tsp",
+          "notes": "split across two temperings",
+          "pantry_ref_id": "ing_cumin"
+        },
+        {
+          "order": 8,
+          "name": "Asafoetida (Hing)",
+          "amount": "1/4",
+          "unit": "tsp",
+          "notes": "split across two temperings",
+          "pantry_ref_id": "ing_asafoetida"
+        },
+        {
+          "order": 9,
+          "name": "Fresh Ginger",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": "grated",
+          "pantry_ref_id": "ing_ginger"
+        },
+        {
+          "order": 10,
+          "name": "Tomato",
+          "amount": "1",
+          "unit": "large",
+          "notes": "chopped",
+          "pantry_ref_id": "ing_tomato"
+        },
+        {
+          "order": 11,
+          "name": "Turmeric",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "powder",
+          "pantry_ref_id": "ing_turmeric"
+        },
+        {
+          "order": 12,
+          "name": "Coriander Seed Powder",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "freshly ground",
+          "pantry_ref_id": "ing_coriander_seeds"
+        },
+        {
+          "order": 13,
+          "name": "Lemon",
+          "amount": "1/2",
+          "unit": "medium",
+          "notes": "juiced at the end",
+          "pantry_ref_id": "ing_lemon"
+        },
+        {
+          "order": 14,
+          "name": "Rock Salt (Sendha Namak)",
+          "amount": "1.5",
+          "unit": "tsp",
+          "notes": "to taste",
+          "pantry_ref_id": "ing_rock_salt"
+        },
+        {
+          "order": 15,
+          "name": "Fresh Coriander Leaves",
+          "amount": "1/4",
+          "unit": "cup",
+          "notes": "to finish",
+          "pantry_ref_id": "ing_coriander_leaves"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Rinse all five dals together until the water runs clear, then pressure cook with turmeric and 4 cups water for 4 whistles."
+        },
+        {
+          "step": 2,
+          "text": "Heat 1 tbsp ghee, crackle 1 tsp cumin, add half the hing, the ginger and the chopped tomato with coriander powder."
+        },
+        {
+          "step": 3,
+          "text": "Cook the masala until the tomato collapses, then whisk it into the cooked dal with salt and simmer for 10 minutes to marry."
+        },
+        {
+          "step": 4,
+          "text": "For the finishing tadka, heat the remaining ghee until shimmering, crackle the rest of the cumin and hing, and pour it sizzling over the dal."
+        },
+        {
+          "step": 5,
+          "text": "Squeeze in lemon, scatter coriander, and serve immediately with bajra roti or steamed rice."
+        }
+      ],
+      "created_at": "2026-09-15T21:00:00Z",
+      "updated_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "rec_01h9a8c9",
+      "title": "Tofu Bhurji with Bajra Roti",
+      "description": "Crumbled tofu scrambled with cumin, turmeric and tomato, paired with iron-rich pearl millet flatbread — thirty grams of plant protein per plate.",
+      "category": "High Protein Mains",
+      "servings": 2,
+      "yield_grams": 800,
+      "times": {
+        "prep": "15 mins",
+        "cook": "25 mins",
+        "total": "40 mins"
+      },
+      "nutrition_per_serving": {
+        "calories": "472 kcal",
+        "protein": "30g",
+        "carbs": "44g",
+        "fat": "20g",
+        "fiber": "10g",
+        "iron": "7.2 mg",
+        "zinc": "3.4 mg"
+      },
+      "ayurvedic_profile": {
+        "dosha_balance": "Kapha ↓ | Pitta = | Vata ↑ (bajra is warming and helps)",
+        "therapeutic_note": "Tofu alone is Sheeta and Guru; pairing it with Ushna bajra and a heavy hand of ginger keeps the meal digestible rather than congesting."
+      },
+      "image_url": "/assets/placeholder_food.svg",
+      "chef_notes": "Press the tofu under a weighted plate for 20 minutes first. Water is the enemy here — you want the crumbles to fry and catch colour, not steam in the pan.",
+      "ingredients": [
+        {
+          "order": 1,
+          "name": "Firm Tofu",
+          "amount": "300",
+          "unit": "g",
+          "notes": "pressed dry and crumbled",
+          "pantry_ref_id": "ing_tofu"
+        },
+        {
+          "order": 2,
+          "name": "Bajra Flour (Pearl Millet)",
+          "amount": "1",
+          "unit": "cup",
+          "notes": "for 4 rotis",
+          "pantry_ref_id": "ing_bajra_flour"
+        },
+        {
+          "order": 3,
+          "name": "Tomato",
+          "amount": "2",
+          "unit": "medium",
+          "notes": "finely chopped",
+          "pantry_ref_id": "ing_tomato"
+        },
+        {
+          "order": 4,
+          "name": "Pure Desi Cow Ghee",
+          "amount": "1.5",
+          "unit": "tbsp",
+          "notes": "for the bhurji and the rotis",
+          "pantry_ref_id": "ing_ghee"
+        },
+        {
+          "order": 5,
+          "name": "Cumin Seeds (Jeera)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "crackled",
+          "pantry_ref_id": "ing_cumin"
+        },
+        {
+          "order": 6,
+          "name": "Turmeric",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "powder",
+          "pantry_ref_id": "ing_turmeric"
+        },
+        {
+          "order": 7,
+          "name": "Fresh Ginger",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": "grated",
+          "pantry_ref_id": "ing_ginger"
+        },
+        {
+          "order": 8,
+          "name": "Green Chilli",
+          "amount": "1",
+          "unit": "small",
+          "notes": "minced",
+          "pantry_ref_id": "ing_green_chilli"
+        },
+        {
+          "order": 9,
+          "name": "Asafoetida (Hing)",
+          "amount": "1",
+          "unit": "pinch",
+          "notes": "bloomed in ghee",
+          "pantry_ref_id": "ing_asafoetida"
+        },
+        {
+          "order": 10,
+          "name": "Black Peppercorns (Kali Mirch)",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "cracked at the end",
+          "pantry_ref_id": "ing_black_pepper"
+        },
+        {
+          "order": 11,
+          "name": "Rock Salt (Sendha Namak)",
+          "amount": "1.25",
+          "unit": "tsp",
+          "notes": "to taste",
+          "pantry_ref_id": "ing_rock_salt"
+        },
+        {
+          "order": 12,
+          "name": "Fresh Coriander Leaves",
+          "amount": "1/4",
+          "unit": "cup",
+          "notes": "to finish",
+          "pantry_ref_id": "ing_coriander_leaves"
+        },
+        {
+          "order": 13,
+          "name": "Lemon",
+          "amount": "1/2",
+          "unit": "medium",
+          "notes": "juiced over the bhurji",
+          "pantry_ref_id": "ing_lemon"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Press the tofu under a weight for 20 minutes, then crumble it coarsely with your fingers so the texture stays varied."
+        },
+        {
+          "step": 2,
+          "text": "Knead the bajra flour with hot water and a pinch of salt into a soft dough; rest it covered for 10 minutes."
+        },
+        {
+          "step": 3,
+          "text": "Heat ghee, crackle cumin, add hing, ginger and green chilli, then the tomato and turmeric. Cook until the tomato breaks down."
+        },
+        {
+          "step": 4,
+          "text": "Add the crumbled tofu with salt and fry on high heat for 6 to 8 minutes without stirring constantly, letting some edges catch and brown."
+        },
+        {
+          "step": 5,
+          "text": "Pat the bajra dough into discs between your palms and roast on a hot tawa, pressing gently until they puff. Smear with ghee."
+        },
+        {
+          "step": 6,
+          "text": "Finish the bhurji with cracked pepper, lemon and coriander, and serve straight from the pan with the hot rotis."
+        }
+      ],
+      "created_at": "2026-09-15T21:00:00Z",
+      "updated_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "rec_01h9a8ca",
+      "title": "Kala Chana Sundal (Temple-Style Protein Salad)",
+      "description": "Black chickpeas tossed in a mustard and curry-leaf tempering with fresh coconut — the offering-plate dish of South Indian temples, and quietly one of the highest-iron recipes here.",
+      "category": "Sattvic Salads & Sprouts",
+      "servings": 3,
+      "yield_grams": 650,
+      "times": {
+        "prep": "10 mins",
+        "cook": "20 mins",
+        "total": "30 mins (plus 8 hrs soaking)"
+      },
+      "nutrition_per_serving": {
+        "calories": "334 kcal",
+        "protein": "15g",
+        "carbs": "42g",
+        "fat": "11g",
+        "fiber": "13g",
+        "iron": "6.4 mg",
+        "zinc": "2.4 mg"
+      },
+      "ayurvedic_profile": {
+        "dosha_balance": "Pitta ↓ | Kapha ↓ | Vata ↑ (balanced by coconut and ghee)",
+        "therapeutic_note": "Naivedya food — prepared without onion or garlic for temple offering. Kala chana is Kashaya and drying, strongly Kapha-reducing, and unusually rich in absorbable iron."
+      },
+      "image_url": "/assets/placeholder_food.svg",
+      "chef_notes": "Cook the chana until it yields but still holds its shape — mushy sundal is a lost cause. Fresh grated coconut added off the heat, never fried, is the whole point of the dish.",
+      "ingredients": [
+        {
+          "order": 1,
+          "name": "Kala Chana (Black Chickpeas)",
+          "amount": "1",
+          "unit": "cup",
+          "notes": "soaked 8 hrs, pressure cooked firm",
+          "pantry_ref_id": "ing_kala_chana"
+        },
+        {
+          "order": 2,
+          "name": "Fresh Coconut",
+          "amount": "1/2",
+          "unit": "cup",
+          "notes": "freshly grated, added off heat",
+          "pantry_ref_id": "ing_coconut"
+        },
+        {
+          "order": 3,
+          "name": "Pure Desi Cow Ghee",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": "for the tempering",
+          "pantry_ref_id": "ing_ghee"
+        },
+        {
+          "order": 4,
+          "name": "Mustard Seeds (Rai)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "must pop fully",
+          "pantry_ref_id": "ing_mustard_seeds"
+        },
+        {
+          "order": 5,
+          "name": "Urad Dal (Split Black Gram)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "for crunch in the tadka",
+          "pantry_ref_id": "ing_urad_dal"
+        },
+        {
+          "order": 6,
+          "name": "Curry Leaves",
+          "amount": "12",
+          "unit": "leaves",
+          "notes": "fresh sprig",
+          "pantry_ref_id": "ing_curry_leaves"
+        },
+        {
+          "order": 7,
+          "name": "Asafoetida (Hing)",
+          "amount": "1",
+          "unit": "pinch",
+          "notes": "sattvic base",
+          "pantry_ref_id": "ing_asafoetida"
+        },
+        {
+          "order": 8,
+          "name": "Green Chilli",
+          "amount": "1",
+          "unit": "small",
+          "notes": "slit",
+          "pantry_ref_id": "ing_green_chilli"
+        },
+        {
+          "order": 9,
+          "name": "Fresh Ginger",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "grated",
+          "pantry_ref_id": "ing_ginger"
+        },
+        {
+          "order": 10,
+          "name": "Lemon",
+          "amount": "1/2",
+          "unit": "medium",
+          "notes": "juiced at the end",
+          "pantry_ref_id": "ing_lemon"
+        },
+        {
+          "order": 11,
+          "name": "Rock Salt (Sendha Namak)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "to taste",
+          "pantry_ref_id": "ing_rock_salt"
+        },
+        {
+          "order": 12,
+          "name": "Fresh Coriander Leaves",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": "to finish",
+          "pantry_ref_id": "ing_coriander_leaves"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Pressure cook the soaked kala chana with a pinch of salt for 5 whistles, then drain well and keep the cooking water for a dal or soup."
+        },
+        {
+          "step": 2,
+          "text": "Heat ghee in a wide pan, pop the mustard seeds, then add urad dal and fry until it turns pale gold."
+        },
+        {
+          "step": 3,
+          "text": "Add curry leaves, green chilli, ginger and hing and let them crackle for ten seconds."
+        },
+        {
+          "step": 4,
+          "text": "Tip in the drained chana with rock salt and toss on high heat for 3 to 4 minutes so each bean gets coated and slightly dry."
+        },
+        {
+          "step": 5,
+          "text": "Turn off the flame, fold in the fresh coconut, squeeze over the lemon, scatter coriander and serve warm or at room temperature."
+        }
+      ],
+      "created_at": "2026-09-15T21:00:00Z",
+      "updated_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "rec_01h9a8cb",
+      "title": "Rajgira Almond Porridge (Amaranth Kheer)",
+      "description": "Amaranth simmered in cardamom milk with crushed almonds and a whisper of jaggery — a sattvic fasting grain turned into a complete-protein breakfast.",
+      "category": "Sattvic Protein Breakfast",
+      "servings": 3,
+      "yield_grams": 950,
+      "times": {
+        "prep": "5 mins",
+        "cook": "25 mins",
+        "total": "30 mins"
+      },
+      "nutrition_per_serving": {
+        "calories": "398 kcal",
+        "protein": "16g",
+        "carbs": "48g",
+        "fat": "16g",
+        "fiber": "6g",
+        "iron": "4.8 mg",
+        "zinc": "2.7 mg"
+      },
+      "ayurvedic_profile": {
+        "dosha_balance": "Tridoshic (Vata ↓ | Pitta ↓ | Kapha = )",
+        "therapeutic_note": "Rajgira is one of the few grains permitted during vrata (fasting) and is a rare complete plant protein with lysine intact. Deeply Ojas-building when cooked in milk with cardamom."
+      },
+      "image_url": "/assets/placeholder_food.svg",
+      "chef_notes": "Soak the almonds overnight and slip the skins off — Ayurveda holds the skin to be Pitta-aggravating, and blanched almonds blend far creamier into the kheer.",
+      "ingredients": [
+        {
+          "order": 1,
+          "name": "Amaranth Seeds (Rajgira)",
+          "amount": "3/4",
+          "unit": "cup",
+          "notes": "rinsed",
+          "pantry_ref_id": "ing_amaranth"
+        },
+        {
+          "order": 2,
+          "name": "Whole Milk",
+          "amount": "3",
+          "unit": "cups",
+          "notes": "plus more to loosen",
+          "pantry_ref_id": "ing_milk"
+        },
+        {
+          "order": 3,
+          "name": "Almonds",
+          "amount": "1/4",
+          "unit": "cup",
+          "notes": "soaked overnight, peeled, slivered",
+          "pantry_ref_id": "ing_almonds"
+        },
+        {
+          "order": 4,
+          "name": "Cardamom (Green Elaichi)",
+          "amount": "4",
+          "unit": "pods",
+          "notes": "seeds ground fresh",
+          "pantry_ref_id": "ing_cardamom"
+        },
+        {
+          "order": 5,
+          "name": "Jaggery (Gud)",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": "added off the heat",
+          "pantry_ref_id": "ing_jaggery"
+        },
+        {
+          "order": 6,
+          "name": "Pure Desi Cow Ghee",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "for roasting the grain",
+          "pantry_ref_id": "ing_ghee"
+        },
+        {
+          "order": 7,
+          "name": "Cashews",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": "ghee-roasted, to finish",
+          "pantry_ref_id": "ing_cashews"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Warm the ghee and roast the rinsed amaranth for 2 minutes until it smells nutty and the grains separate."
+        },
+        {
+          "step": 2,
+          "text": "Add 1 cup water and cook covered for 12 minutes until the grain swells and turns translucent."
+        },
+        {
+          "step": 3,
+          "text": "Pour in the milk and simmer gently for 10 to 12 minutes, stirring often so it does not catch at the base."
+        },
+        {
+          "step": 4,
+          "text": "Stir in the slivered almonds and ground cardamom and cook 2 minutes more."
+        },
+        {
+          "step": 5,
+          "text": "Take the pan off the heat, let it cool for 3 minutes, then stir in the jaggery — adding it while boiling will curdle the milk."
+        },
+        {
+          "step": 6,
+          "text": "Top with ghee-roasted cashews and serve warm. It thickens as it stands, so loosen with hot milk if needed."
+        }
+      ],
+      "created_at": "2026-09-15T21:00:00Z",
+      "updated_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "rec_01h9a8cc",
+      "title": "Masoor Dal Soup with Ghee-Roasted Pumpkin Seeds",
+      "description": "A light, clean red lentil soup with bottle gourd and carrot, crowned with pumpkin seeds toasted in ghee for a zinc and protein lift.",
+      "category": "Healing Soups & Broths",
+      "servings": 4,
+      "yield_grams": 1200,
+      "times": {
+        "prep": "10 mins",
+        "cook": "25 mins",
+        "total": "35 mins"
+      },
+      "nutrition_per_serving": {
+        "calories": "286 kcal",
+        "protein": "16g",
+        "carbs": "32g",
+        "fat": "10g",
+        "fiber": "8g",
+        "iron": "4.9 mg",
+        "zinc": "3.6 mg"
+      },
+      "ayurvedic_profile": {
+        "dosha_balance": "Kapha ↓ | Pitta ↓ | Vata ↑ (mild)",
+        "therapeutic_note": "Masoor cooks to a Laghu, easily absorbed broth — appropriate when Agni is weak or during convalescence. Lauki makes it cooling and gently diuretic."
+      },
+      "image_url": "/assets/placeholder_food.svg",
+      "chef_notes": "Roast the pumpkin seeds in ghee only until they begin to pop, about 90 seconds. Any longer and they turn bitter and lose their sweet, green edge.",
+      "ingredients": [
+        {
+          "order": 1,
+          "name": "Masoor Dal (Red Lentil)",
+          "amount": "1",
+          "unit": "cup",
+          "notes": "rinsed until water runs clear",
+          "pantry_ref_id": "ing_masoor_dal"
+        },
+        {
+          "order": 2,
+          "name": "Bottle Gourd (Lauki)",
+          "amount": "1",
+          "unit": "cup",
+          "notes": "peeled and cubed",
+          "pantry_ref_id": "ing_bottle_gourd"
+        },
+        {
+          "order": 3,
+          "name": "Carrot",
+          "amount": "1",
+          "unit": "medium",
+          "notes": "diced",
+          "pantry_ref_id": "ing_carrot"
+        },
+        {
+          "order": 4,
+          "name": "Pumpkin Seeds",
+          "amount": "3",
+          "unit": "tbsp",
+          "notes": "ghee-roasted, for topping",
+          "pantry_ref_id": "ing_pumpkin_seeds"
+        },
+        {
+          "order": 5,
+          "name": "Pure Desi Cow Ghee",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": "split between tadka and seeds",
+          "pantry_ref_id": "ing_ghee"
+        },
+        {
+          "order": 6,
+          "name": "Cumin Seeds (Jeera)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "crackled",
+          "pantry_ref_id": "ing_cumin"
+        },
+        {
+          "order": 7,
+          "name": "Asafoetida (Hing)",
+          "amount": "1",
+          "unit": "pinch",
+          "notes": "bloomed in ghee",
+          "pantry_ref_id": "ing_asafoetida"
+        },
+        {
+          "order": 8,
+          "name": "Fresh Ginger",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": "grated",
+          "pantry_ref_id": "ing_ginger"
+        },
+        {
+          "order": 9,
+          "name": "Turmeric",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "powder",
+          "pantry_ref_id": "ing_turmeric"
+        },
+        {
+          "order": 10,
+          "name": "Black Peppercorns (Kali Mirch)",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "freshly cracked",
+          "pantry_ref_id": "ing_black_pepper"
+        },
+        {
+          "order": 11,
+          "name": "Lemon",
+          "amount": "1",
+          "unit": "medium",
+          "notes": "juiced at the table",
+          "pantry_ref_id": "ing_lemon"
+        },
+        {
+          "order": 12,
+          "name": "Rock Salt (Sendha Namak)",
+          "amount": "1.5",
+          "unit": "tsp",
+          "notes": "to taste",
+          "pantry_ref_id": "ing_rock_salt"
+        },
+        {
+          "order": 13,
+          "name": "Fresh Coriander Leaves",
+          "amount": "1/4",
+          "unit": "cup",
+          "notes": "to finish",
+          "pantry_ref_id": "ing_coriander_leaves"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Pressure cook the masoor dal with lauki, carrot, turmeric and 4 cups water for 3 whistles, then whisk until smooth and broth-like."
+        },
+        {
+          "step": 2,
+          "text": "Heat half the ghee, crackle the cumin, add hing and grated ginger, and pour this tempering into the soup."
+        },
+        {
+          "step": 3,
+          "text": "Simmer the soup for 8 minutes with rock salt, adding hot water until it pours easily from the ladle."
+        },
+        {
+          "step": 4,
+          "text": "In a small pan, toast the pumpkin seeds in the remaining ghee until they just begin to pop, then remove immediately."
+        },
+        {
+          "step": 5,
+          "text": "Ladle into bowls, crack black pepper over the surface, scatter the seeds and coriander, and squeeze lemon in at the table."
+        }
+      ],
+      "created_at": "2026-09-15T21:00:00Z",
+      "updated_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "rec_01h9a8cd",
+      "title": "Besan Kadhi with Paneer Pakoda",
+      "description": "Silky curd and gram flour kadhi simmered slow, with soft paneer fritters dropped in — curd and besan and paneer stacking to twenty-two grams of protein.",
+      "category": "High Protein Mains",
+      "servings": 3,
+      "yield_grams": 1100,
+      "times": {
+        "prep": "15 mins",
+        "cook": "35 mins",
+        "total": "50 mins"
+      },
+      "nutrition_per_serving": {
+        "calories": "424 kcal",
+        "protein": "22g",
+        "carbs": "28g",
+        "fat": "24g",
+        "fiber": "5g",
+        "iron": "3.1 mg",
+        "zinc": "2.2 mg"
+      },
+      "ayurvedic_profile": {
+        "dosha_balance": "Vata ↓ | Pitta ↑ | Kapha ↑",
+        "therapeutic_note": "Sour curd is Ushna and Abhishyandi — kadhi is therefore a midday winter dish, never a night meal. The long simmer and generous ginger are the traditional correctives."
+      },
+      "image_url": "/assets/placeholder_food.svg",
+      "chef_notes": "Whisk the besan into the curd cold and keep stirring in one direction until it comes to a boil. Stop stirring too early and it will split every single time.",
+      "ingredients": [
+        {
+          "order": 1,
+          "name": "Fresh Curd (Dahi)",
+          "amount": "2",
+          "unit": "cups",
+          "notes": "slightly sour, whisked smooth",
+          "pantry_ref_id": "ing_curd"
+        },
+        {
+          "order": 2,
+          "name": "Gram Flour (Besan)",
+          "amount": "3/4",
+          "unit": "cup",
+          "notes": "split between kadhi and pakoda",
+          "pantry_ref_id": "ing_besan"
+        },
+        {
+          "order": 3,
+          "name": "Fresh Paneer",
+          "amount": "150",
+          "unit": "g",
+          "notes": "cubed, for the pakodas",
+          "pantry_ref_id": "ing_paneer"
+        },
+        {
+          "order": 4,
+          "name": "Pure Desi Cow Ghee",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": "for shallow frying and tadka",
+          "pantry_ref_id": "ing_ghee"
+        },
+        {
+          "order": 5,
+          "name": "Turmeric",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "powder",
+          "pantry_ref_id": "ing_turmeric"
+        },
+        {
+          "order": 6,
+          "name": "Fenugreek Leaves (Methi)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "dried, crushed",
+          "pantry_ref_id": "ing_fenugreek_leaves"
+        },
+        {
+          "order": 7,
+          "name": "Mustard Seeds (Rai)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "for the tadka",
+          "pantry_ref_id": "ing_mustard_seeds"
+        },
+        {
+          "order": 8,
+          "name": "Cumin Seeds (Jeera)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "for the tadka",
+          "pantry_ref_id": "ing_cumin"
+        },
+        {
+          "order": 9,
+          "name": "Asafoetida (Hing)",
+          "amount": "1/4",
+          "unit": "tsp",
+          "notes": "essential here",
+          "pantry_ref_id": "ing_asafoetida"
+        },
+        {
+          "order": 10,
+          "name": "Curry Leaves",
+          "amount": "10",
+          "unit": "leaves",
+          "notes": "fresh",
+          "pantry_ref_id": "ing_curry_leaves"
+        },
+        {
+          "order": 11,
+          "name": "Fresh Ginger",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": "grated",
+          "pantry_ref_id": "ing_ginger"
+        },
+        {
+          "order": 12,
+          "name": "Carom Seeds (Ajwain)",
+          "amount": "1/4",
+          "unit": "tsp",
+          "notes": "in the pakoda batter",
+          "pantry_ref_id": "ing_ajwain"
+        },
+        {
+          "order": 13,
+          "name": "Rock Salt (Sendha Namak)",
+          "amount": "1.5",
+          "unit": "tsp",
+          "notes": "to taste",
+          "pantry_ref_id": "ing_rock_salt"
+        },
+        {
+          "order": 14,
+          "name": "Fresh Coriander Leaves",
+          "amount": "3",
+          "unit": "tbsp",
+          "notes": "to finish",
+          "pantry_ref_id": "ing_coriander_leaves"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Whisk 1/2 cup besan into the curd while both are cold, along with turmeric, ginger and 3 cups water, until absolutely smooth."
+        },
+        {
+          "step": 2,
+          "text": "Bring the mixture to a boil over medium heat, stirring continuously in one direction. Once it boils, drop to a low simmer and cook 25 minutes until it coats a spoon."
+        },
+        {
+          "step": 3,
+          "text": "Make a thick batter from the remaining besan with ajwain, salt and a little water, coat the paneer cubes and shallow-fry in ghee until golden."
+        },
+        {
+          "step": 4,
+          "text": "Slide the paneer pakodas into the simmering kadhi and let them sit for 5 minutes to drink up the gravy without going soggy."
+        },
+        {
+          "step": 5,
+          "text": "Heat the last of the ghee, pop the mustard, crackle cumin, add hing and curry leaves, and pour the tadka over the kadhi."
+        },
+        {
+          "step": 6,
+          "text": "Crush the fenugreek leaves on top, finish with coriander, and serve hot with steamed rice at lunch."
+        }
+      ],
+      "created_at": "2026-09-15T21:00:00Z",
+      "updated_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "rec_01h9a8ce",
+      "title": "Badam-Dahi Protein Lassi (Sattvic)",
+      "description": "Thick set curd blended with soaked almonds, pumpkin seeds and cardamom — a cooling, no-cook protein drink for hot afternoons.",
+      "category": "Healing Elixirs & Teas",
+      "servings": 2,
+      "yield_grams": 600,
+      "times": {
+        "prep": "10 mins",
+        "cook": "0 mins",
+        "total": "10 mins (plus overnight soaking)"
+      },
+      "nutrition_per_serving": {
+        "calories": "304 kcal",
+        "protein": "15g",
+        "carbs": "24g",
+        "fat": "17g",
+        "fiber": "3g",
+        "iron": "2.2 mg",
+        "zinc": "2.4 mg"
+      },
+      "ayurvedic_profile": {
+        "dosha_balance": "Pitta ↓ | Vata ↓ | Kapha ↑",
+        "therapeutic_note": "Sweet lassi taken at midday pacifies Pitta and rebuilds Rasa dhatu. Diluting curd with water is what turns a heavy, Kapha-forming food into a light, digestible one."
+      },
+      "image_url": "/assets/placeholder_food.svg",
+      "chef_notes": "Blend on low, not high. Over-blending heats the curd, kills the live cultures and thins the texture to something watery — thirty seconds is plenty.",
+      "ingredients": [
+        {
+          "order": 1,
+          "name": "Fresh Curd (Dahi)",
+          "amount": "2",
+          "unit": "cups",
+          "notes": "thick set, fresh not sour",
+          "pantry_ref_id": "ing_curd"
+        },
+        {
+          "order": 2,
+          "name": "Almonds",
+          "amount": "1/4",
+          "unit": "cup",
+          "notes": "soaked overnight and peeled",
+          "pantry_ref_id": "ing_almonds"
+        },
+        {
+          "order": 3,
+          "name": "Pumpkin Seeds",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": "soaked 2 hrs",
+          "pantry_ref_id": "ing_pumpkin_seeds"
+        },
+        {
+          "order": 4,
+          "name": "Cardamom (Green Elaichi)",
+          "amount": "3",
+          "unit": "pods",
+          "notes": "seeds ground fresh",
+          "pantry_ref_id": "ing_cardamom"
+        },
+        {
+          "order": 5,
+          "name": "Jaggery (Gud)",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": "powdered, to taste",
+          "pantry_ref_id": "ing_jaggery"
+        },
+        {
+          "order": 6,
+          "name": "Whole Milk",
+          "amount": "1/2",
+          "unit": "cup",
+          "notes": "chilled, to loosen",
+          "pantry_ref_id": "ing_milk"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Soak the almonds overnight and slip off their skins; soak the pumpkin seeds for at least 2 hours."
+        },
+        {
+          "step": 2,
+          "text": "Blend the almonds and pumpkin seeds with the milk first, until you have a completely smooth white paste with no grit."
+        },
+        {
+          "step": 3,
+          "text": "Add the curd, jaggery and ground cardamom and blend on the lowest setting for 30 seconds only."
+        },
+        {
+          "step": 4,
+          "text": "Thin with chilled water to the thickness you like, pour into clay or steel tumblers and drink at midday rather than after sunset."
+        }
+      ],
+      "created_at": "2026-09-15T21:00:00Z",
+      "updated_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "rec_01h9a8cf",
+      "title": "Protein Idli with Moong Sambar",
+      "description": "Fermented urad and moong idlis paired with a lentil sambar — steamed, oil-free, and made genuinely high protein by shifting the batter ratio toward the dals.",
+      "category": "High Protein Breakfast",
+      "servings": 4,
+      "yield_grams": 1600,
+      "times": {
+        "prep": "20 mins",
+        "cook": "30 mins",
+        "total": "50 mins (plus 12 hrs fermenting)"
+      },
+      "nutrition_per_serving": {
+        "calories": "432 kcal",
+        "protein": "20g",
+        "carbs": "64g",
+        "fat": "9g",
+        "fiber": "10g",
+        "iron": "4.6 mg",
+        "zinc": "2.9 mg"
+      },
+      "ayurvedic_profile": {
+        "dosha_balance": "Vata ↓ | Pitta = | Kapha ↑ (mild)",
+        "therapeutic_note": "Fermentation predigests the pulses and makes their minerals far more available. Steaming keeps the preparation Laghu, which is why idli is prescribed even for weak digestion."
+      },
+      "image_url": "/assets/placeholder_food.svg",
+      "chef_notes": "Grind the urad dal cold and long until the batter is genuinely aerated — flick a drop into water and it should float. That float test, not the clock, tells you the idlis will be soft.",
+      "ingredients": [
+        {
+          "order": 1,
+          "name": "Urad Dal (Split Black Gram)",
+          "amount": "1",
+          "unit": "cup",
+          "notes": "soaked 5 hrs, ground fluffy",
+          "pantry_ref_id": "ing_urad_dal"
+        },
+        {
+          "order": 2,
+          "name": "Split Yellow Moong Dal",
+          "amount": "1/2",
+          "unit": "cup",
+          "notes": "soaked 5 hrs, ground with the urad",
+          "pantry_ref_id": "ing_moong_dal"
+        },
+        {
+          "order": 3,
+          "name": "Basmati Rice",
+          "amount": "1",
+          "unit": "cup",
+          "notes": "soaked 5 hrs, ground coarse",
+          "pantry_ref_id": "ing_basmati_rice"
+        },
+        {
+          "order": 4,
+          "name": "Toor Dal (Pigeon Pea)",
+          "amount": "3/4",
+          "unit": "cup",
+          "notes": "for the sambar",
+          "pantry_ref_id": "ing_toor_dal"
+        },
+        {
+          "order": 5,
+          "name": "Bottle Gourd (Lauki)",
+          "amount": "1",
+          "unit": "cup",
+          "notes": "cubed, into the sambar",
+          "pantry_ref_id": "ing_bottle_gourd"
+        },
+        {
+          "order": 6,
+          "name": "Carrot",
+          "amount": "1",
+          "unit": "medium",
+          "notes": "diced, into the sambar",
+          "pantry_ref_id": "ing_carrot"
+        },
+        {
+          "order": 7,
+          "name": "Tomato",
+          "amount": "1",
+          "unit": "large",
+          "notes": "chopped",
+          "pantry_ref_id": "ing_tomato"
+        },
+        {
+          "order": 8,
+          "name": "Mustard Seeds (Rai)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "for the tadka",
+          "pantry_ref_id": "ing_mustard_seeds"
+        },
+        {
+          "order": 9,
+          "name": "Curry Leaves",
+          "amount": "12",
+          "unit": "leaves",
+          "notes": "fresh sprig",
+          "pantry_ref_id": "ing_curry_leaves"
+        },
+        {
+          "order": 10,
+          "name": "Asafoetida (Hing)",
+          "amount": "1/4",
+          "unit": "tsp",
+          "notes": "in the sambar tadka",
+          "pantry_ref_id": "ing_asafoetida"
+        },
+        {
+          "order": 11,
+          "name": "Coriander Seed Powder",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": "base of the sambar masala",
+          "pantry_ref_id": "ing_coriander_seeds"
+        },
+        {
+          "order": 12,
+          "name": "Turmeric",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "powder",
+          "pantry_ref_id": "ing_turmeric"
+        },
+        {
+          "order": 13,
+          "name": "Pure Desi Cow Ghee",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": "for the tadka",
+          "pantry_ref_id": "ing_ghee"
+        },
+        {
+          "order": 14,
+          "name": "Rock Salt (Sendha Namak)",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": "split between batter and sambar",
+          "pantry_ref_id": "ing_rock_salt"
+        },
+        {
+          "order": 15,
+          "name": "Fresh Coriander Leaves",
+          "amount": "1/4",
+          "unit": "cup",
+          "notes": "to finish",
+          "pantry_ref_id": "ing_coriander_leaves"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Soak urad dal with moong dal in one bowl and the rice in another for 5 hours. Grind the dals first to a light, aerated batter using cold water."
+        },
+        {
+          "step": 2,
+          "text": "Grind the rice to a slightly coarse paste, combine both batters with your hand, add salt, and ferment in a warm place for 10 to 12 hours until risen and faintly sour."
+        },
+        {
+          "step": 3,
+          "text": "Grease idli moulds, pour the batter to three-quarters, and steam for 10 to 12 minutes until a skewer comes out clean."
+        },
+        {
+          "step": 4,
+          "text": "For the sambar, pressure cook toor dal with lauki, carrot, tomato and turmeric for 4 whistles, then whisk in coriander powder and salt with 2 cups hot water."
+        },
+        {
+          "step": 5,
+          "text": "Heat ghee, pop the mustard seeds, add hing and curry leaves, and pour this over the simmering sambar."
+        },
+        {
+          "step": 6,
+          "text": "Rest the idlis 2 minutes before unmoulding, then serve four to a plate with hot sambar and coriander."
+        }
+      ],
+      "created_at": "2026-09-15T21:00:00Z",
+      "updated_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "rec_01h9a8d0",
+      "title": "Baked Paneer Tikka (Sattvic Marinade)",
+      "description": "Paneer marinated in hung curd, besan and ajwain with no onion or garlic, then baked rather than fried — twenty-one grams of protein for barely three hundred calories.",
+      "category": "Sattvic Protein Mains",
+      "servings": 3,
+      "yield_grams": 650,
+      "times": {
+        "prep": "15 mins",
+        "cook": "20 mins",
+        "total": "35 mins (plus 1 hr marinating)"
+      },
+      "nutrition_per_serving": {
+        "calories": "328 kcal",
+        "protein": "21g",
+        "carbs": "11g",
+        "fat": "23g",
+        "fiber": "2g",
+        "iron": "1.4 mg",
+        "zinc": "2.3 mg"
+      },
+      "ayurvedic_profile": {
+        "dosha_balance": "Vata ↓ | Pitta = | Kapha ↑",
+        "therapeutic_note": "Dry heat cooking (baking) reduces the Abhishyandi, channel-clogging quality of fresh paneer. Ajwain and ginger in the marinade are what make a heavy Madhura food digestible."
+      },
+      "image_url": "/assets/placeholder_food.svg",
+      "chef_notes": "Hang the curd in muslin for a full hour until it loses its whey. Wet marinade slides off in the oven; thick marinade clings and chars into that blistered crust you actually want.",
+      "ingredients": [
+        {
+          "order": 1,
+          "name": "Fresh Paneer",
+          "amount": "300",
+          "unit": "g",
+          "notes": "cut into 1-inch cubes",
+          "pantry_ref_id": "ing_paneer"
+        },
+        {
+          "order": 2,
+          "name": "Fresh Curd (Dahi)",
+          "amount": "1/2",
+          "unit": "cup",
+          "notes": "hung 1 hr until thick",
+          "pantry_ref_id": "ing_curd"
+        },
+        {
+          "order": 3,
+          "name": "Gram Flour (Besan)",
+          "amount": "2",
+          "unit": "tbsp",
+          "notes": "dry-roasted, binds the marinade",
+          "pantry_ref_id": "ing_besan"
+        },
+        {
+          "order": 4,
+          "name": "Fresh Ginger",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": "grated fine",
+          "pantry_ref_id": "ing_ginger"
+        },
+        {
+          "order": 5,
+          "name": "Carom Seeds (Ajwain)",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "crushed between palms",
+          "pantry_ref_id": "ing_ajwain"
+        },
+        {
+          "order": 6,
+          "name": "Turmeric",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "powder",
+          "pantry_ref_id": "ing_turmeric"
+        },
+        {
+          "order": 7,
+          "name": "Coriander Seed Powder",
+          "amount": "1.5",
+          "unit": "tsp",
+          "notes": "freshly ground",
+          "pantry_ref_id": "ing_coriander_seeds"
+        },
+        {
+          "order": 8,
+          "name": "Black Peppercorns (Kali Mirch)",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "coarsely cracked",
+          "pantry_ref_id": "ing_black_pepper"
+        },
+        {
+          "order": 9,
+          "name": "Dried Fenugreek Leaves (Methi)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "crushed into the marinade",
+          "pantry_ref_id": "ing_fenugreek_leaves"
+        },
+        {
+          "order": 10,
+          "name": "Pure Desi Cow Ghee",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": "melted, brushed over before baking",
+          "pantry_ref_id": "ing_ghee"
+        },
+        {
+          "order": 11,
+          "name": "Lemon",
+          "amount": "1",
+          "unit": "medium",
+          "notes": "half in marinade, half at the table",
+          "pantry_ref_id": "ing_lemon"
+        },
+        {
+          "order": 12,
+          "name": "Rock Salt (Sendha Namak)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "to taste",
+          "pantry_ref_id": "ing_rock_salt"
+        },
+        {
+          "order": 13,
+          "name": "Fresh Coriander Leaves",
+          "amount": "3",
+          "unit": "tbsp",
+          "notes": "to finish",
+          "pantry_ref_id": "ing_coriander_leaves"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Hang the curd in muslin for an hour so all the whey drains away and you are left with a thick, cheese-like base."
+        },
+        {
+          "step": 2,
+          "text": "Dry-roast the besan for 2 minutes until it smells nutty, then whisk it into the hung curd with ginger, ajwain, turmeric, coriander powder, pepper, methi, lemon juice and salt."
+        },
+        {
+          "step": 3,
+          "text": "Fold the paneer cubes through gently so every face is coated, and marinate for at least an hour in the fridge."
+        },
+        {
+          "step": 4,
+          "text": "Thread onto skewers, brush with melted ghee and bake at 220°C for 15 to 18 minutes, turning once halfway."
+        },
+        {
+          "step": 5,
+          "text": "Finish under the grill for 2 minutes for char, then rest 3 minutes, squeeze over lemon and scatter coriander before serving."
+        }
+      ],
+      "created_at": "2026-09-15T21:00:00Z",
+      "updated_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "rec_01h9a8d1",
+      "title": "Quinoa Upma with Sprouts and Cashews",
+      "description": "A savoury quinoa upma studded with sprouted moong, curry leaves and ghee-roasted cashews — a South Indian breakfast rebuilt around protein.",
+      "category": "Sattvic Protein Breakfast",
+      "servings": 3,
+      "yield_grams": 900,
+      "times": {
+        "prep": "15 mins",
+        "cook": "20 mins",
+        "total": "35 mins"
+      },
+      "nutrition_per_serving": {
+        "calories": "386 kcal",
+        "protein": "15g",
+        "carbs": "48g",
+        "fat": "15g",
+        "fiber": "8g",
+        "iron": "4.1 mg",
+        "zinc": "2.8 mg"
+      },
+      "ayurvedic_profile": {
+        "dosha_balance": "Kapha ↓ | Pitta = | Vata = (with ghee)",
+        "therapeutic_note": "Quinoa is Laghu and Ruksha, which suits a sluggish Kapha morning far better than semolina. Ghee and cashews restore just enough unctuousness to keep Vata settled."
+      },
+      "image_url": "/assets/placeholder_food.svg",
+      "chef_notes": "Toast the rinsed quinoa dry until it crackles before any water goes in. That single step is the difference between distinct grains and a porridge.",
+      "ingredients": [
+        {
+          "order": 1,
+          "name": "Quinoa",
+          "amount": "1",
+          "unit": "cup",
+          "notes": "rinsed 1 min, dry-toasted",
+          "pantry_ref_id": "ing_quinoa"
+        },
+        {
+          "order": 2,
+          "name": "Whole Green Moong",
+          "amount": "3/4",
+          "unit": "cup",
+          "notes": "sprouted, lightly steamed",
+          "pantry_ref_id": "ing_whole_moong"
+        },
+        {
+          "order": 3,
+          "name": "Cashews",
+          "amount": "3",
+          "unit": "tbsp",
+          "notes": "ghee-roasted golden",
+          "pantry_ref_id": "ing_cashews"
+        },
+        {
+          "order": 4,
+          "name": "Pure Desi Cow Ghee",
+          "amount": "1.5",
+          "unit": "tbsp",
+          "notes": "for tempering and roasting",
+          "pantry_ref_id": "ing_ghee"
+        },
+        {
+          "order": 5,
+          "name": "Mustard Seeds (Rai)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "must pop",
+          "pantry_ref_id": "ing_mustard_seeds"
+        },
+        {
+          "order": 6,
+          "name": "Chana Dal (Split Bengal Gram)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "for crunch in the tadka",
+          "pantry_ref_id": "ing_chana_dal"
+        },
+        {
+          "order": 7,
+          "name": "Urad Dal (Split Black Gram)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "for crunch in the tadka",
+          "pantry_ref_id": "ing_urad_dal"
+        },
+        {
+          "order": 8,
+          "name": "Curry Leaves",
+          "amount": "15",
+          "unit": "leaves",
+          "notes": "fresh",
+          "pantry_ref_id": "ing_curry_leaves"
+        },
+        {
+          "order": 9,
+          "name": "Green Chilli",
+          "amount": "1",
+          "unit": "small",
+          "notes": "slit",
+          "pantry_ref_id": "ing_green_chilli"
+        },
+        {
+          "order": 10,
+          "name": "Fresh Ginger",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": "grated",
+          "pantry_ref_id": "ing_ginger"
+        },
+        {
+          "order": 11,
+          "name": "Asafoetida (Hing)",
+          "amount": "1",
+          "unit": "pinch",
+          "notes": "sattvic base",
+          "pantry_ref_id": "ing_asafoetida"
+        },
+        {
+          "order": 12,
+          "name": "Carrot",
+          "amount": "1",
+          "unit": "medium",
+          "notes": "finely diced",
+          "pantry_ref_id": "ing_carrot"
+        },
+        {
+          "order": 13,
+          "name": "Fresh Coconut",
+          "amount": "3",
+          "unit": "tbsp",
+          "notes": "grated, folded in at the end",
+          "pantry_ref_id": "ing_coconut"
+        },
+        {
+          "order": 14,
+          "name": "Lemon",
+          "amount": "1/2",
+          "unit": "medium",
+          "notes": "juiced at the end",
+          "pantry_ref_id": "ing_lemon"
+        },
+        {
+          "order": 15,
+          "name": "Rock Salt (Sendha Namak)",
+          "amount": "1.25",
+          "unit": "tsp",
+          "notes": "to taste",
+          "pantry_ref_id": "ing_rock_salt"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Rinse the quinoa thoroughly, drain, and dry-toast it in a pan for 3 minutes until it smells nutty and crackles. Set aside."
+        },
+        {
+          "step": 2,
+          "text": "Roast the cashews in a little ghee until golden and lift them out before they darken."
+        },
+        {
+          "step": 3,
+          "text": "In the same pan, heat the remaining ghee, pop mustard seeds, add chana dal and urad dal and fry to a pale gold, then add curry leaves, chilli, ginger and hing."
+        },
+        {
+          "step": 4,
+          "text": "Add the diced carrot, sauté 3 minutes, then tip in the toasted quinoa with 1.75 cups hot water and salt."
+        },
+        {
+          "step": 5,
+          "text": "Cover and cook on low for 12 minutes, then fold in the steamed sprouts and rest covered off the flame for 5 minutes."
+        },
+        {
+          "step": 6,
+          "text": "Fluff with a fork, fold in coconut and roasted cashews, squeeze over lemon and serve hot."
+        }
+      ],
+      "created_at": "2026-09-15T21:00:00Z",
+      "updated_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "rec_01h9a8d2",
+      "title": "Til-Peanut Protein Laddu (Sattvic)",
+      "description": "Sesame, peanuts and almonds bound with molten jaggery — the winter laddu of Makar Sankranti, and a calcium and protein dense snack that keeps for weeks.",
+      "category": "Sattvic Snacks & Laddus",
+      "servings": 12,
+      "yield_grams": 700,
+      "times": {
+        "prep": "15 mins",
+        "cook": "20 mins",
+        "total": "35 mins"
+      },
+      "nutrition_per_serving": {
+        "calories": "168 kcal",
+        "protein": "6g",
+        "carbs": "14g",
+        "fat": "11g",
+        "fiber": "3g",
+        "iron": "2.4 mg",
+        "zinc": "1.6 mg"
+      },
+      "ayurvedic_profile": {
+        "dosha_balance": "Vata ↓ | Kapha ↓ | Pitta ↑",
+        "therapeutic_note": "Til and gud are classically Ushna and Balya — eaten through Shishira (winter) to build strength and warmth. Reduce the portion sharply in summer or with high Pitta."
+      },
+      "image_url": "/assets/placeholder_food.svg",
+      "chef_notes": "Take the jaggery syrup to the soft-ball stage and no further — a drop in cold water should form a ball you can flatten between two fingers. Hard-ball syrup gives laddus you cannot bite.",
+      "ingredients": [
+        {
+          "order": 1,
+          "name": "Sesame Seeds (Til)",
+          "amount": "1",
+          "unit": "cup",
+          "notes": "dry-roasted until they pop",
+          "pantry_ref_id": "ing_sesame_seeds"
+        },
+        {
+          "order": 2,
+          "name": "Raw Peanuts",
+          "amount": "3/4",
+          "unit": "cup",
+          "notes": "roasted, skinned, coarsely crushed",
+          "pantry_ref_id": "ing_peanuts"
+        },
+        {
+          "order": 3,
+          "name": "Almonds",
+          "amount": "1/4",
+          "unit": "cup",
+          "notes": "roasted and chopped",
+          "pantry_ref_id": "ing_almonds"
+        },
+        {
+          "order": 4,
+          "name": "Pumpkin Seeds",
+          "amount": "1/4",
+          "unit": "cup",
+          "notes": "lightly toasted",
+          "pantry_ref_id": "ing_pumpkin_seeds"
+        },
+        {
+          "order": 5,
+          "name": "Jaggery (Gud)",
+          "amount": "1",
+          "unit": "cup",
+          "notes": "grated, melted to soft-ball stage",
+          "pantry_ref_id": "ing_jaggery"
+        },
+        {
+          "order": 6,
+          "name": "Pure Desi Cow Ghee",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": "for the syrup and greasing palms",
+          "pantry_ref_id": "ing_ghee"
+        },
+        {
+          "order": 7,
+          "name": "Cardamom (Green Elaichi)",
+          "amount": "4",
+          "unit": "pods",
+          "notes": "seeds ground fresh",
+          "pantry_ref_id": "ing_cardamom"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Dry-roast the sesame seeds on low until they pop and turn one shade darker, then cool completely."
+        },
+        {
+          "step": 2,
+          "text": "Roast the peanuts, rub off the skins, and crush them coarsely with the almonds and pumpkin seeds."
+        },
+        {
+          "step": 3,
+          "text": "Melt the jaggery with ghee and a splash of water, and cook until a drop in cold water forms a soft ball you can flatten."
+        },
+        {
+          "step": 4,
+          "text": "Turn off the heat, add the ground cardamom, then fold in all the seeds and nuts quickly and thoroughly."
+        },
+        {
+          "step": 5,
+          "text": "While the mixture is still hot enough to handle, grease your palms with ghee and roll into 12 tight laddus."
+        },
+        {
+          "step": 6,
+          "text": "Cool completely on a plate before storing in an airtight steel jar; they keep for three weeks."
+        }
+      ],
+      "created_at": "2026-09-15T21:00:00Z",
+      "updated_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "rec_01h9a8d3",
+      "title": "Dal Palak with Sesame Tadka",
+      "description": "Toor and masoor cooked down with spinach and finished with a sesame-cumin tempering, pairing plant iron with the vitamin C of lemon for real absorption.",
+      "category": "Sattvic Protein Mains",
+      "servings": 4,
+      "yield_grams": 1200,
+      "times": {
+        "prep": "10 mins",
+        "cook": "30 mins",
+        "total": "40 mins"
+      },
+      "nutrition_per_serving": {
+        "calories": "312 kcal",
+        "protein": "17g",
+        "carbs": "36g",
+        "fat": "11g",
+        "fiber": "10g",
+        "iron": "6.8 mg",
+        "zinc": "2.9 mg"
+      },
+      "ayurvedic_profile": {
+        "dosha_balance": "Kapha ↓ | Pitta ↓ | Vata ↑ (corrected by sesame and ghee)",
+        "therapeutic_note": "The Tikta rasa of spinach scrapes Ama and purifies Rakta dhatu, while the dals rebuild it. Squeeze the lemon in only at the table — heat destroys the vitamin C that unlocks the iron."
+      },
+      "image_url": "/assets/placeholder_food.svg",
+      "chef_notes": "Add the spinach in the last five minutes, not at the start. Long-cooked palak goes grey and metallic and drags the whole dal down with it.",
+      "ingredients": [
+        {
+          "order": 1,
+          "name": "Toor Dal (Pigeon Pea)",
+          "amount": "3/4",
+          "unit": "cup",
+          "notes": "rinsed",
+          "pantry_ref_id": "ing_toor_dal"
+        },
+        {
+          "order": 2,
+          "name": "Masoor Dal (Red Lentil)",
+          "amount": "1/4",
+          "unit": "cup",
+          "notes": "rinsed",
+          "pantry_ref_id": "ing_masoor_dal"
+        },
+        {
+          "order": 3,
+          "name": "Fresh Spinach (Palak)",
+          "amount": "300",
+          "unit": "g",
+          "notes": "chopped, added at the end",
+          "pantry_ref_id": "ing_spinach"
+        },
+        {
+          "order": 4,
+          "name": "Sesame Seeds (Til)",
+          "amount": "2",
+          "unit": "tsp",
+          "notes": "toasted in the tadka",
+          "pantry_ref_id": "ing_sesame_seeds"
+        },
+        {
+          "order": 5,
+          "name": "Pure Desi Cow Ghee",
+          "amount": "1.5",
+          "unit": "tbsp",
+          "notes": "for the tadka",
+          "pantry_ref_id": "ing_ghee"
+        },
+        {
+          "order": 6,
+          "name": "Cumin Seeds (Jeera)",
+          "amount": "1",
+          "unit": "tsp",
+          "notes": "crackled",
+          "pantry_ref_id": "ing_cumin"
+        },
+        {
+          "order": 7,
+          "name": "Asafoetida (Hing)",
+          "amount": "1/4",
+          "unit": "tsp",
+          "notes": "sattvic base",
+          "pantry_ref_id": "ing_asafoetida"
+        },
+        {
+          "order": 8,
+          "name": "Fresh Ginger",
+          "amount": "1",
+          "unit": "tbsp",
+          "notes": "grated",
+          "pantry_ref_id": "ing_ginger"
+        },
+        {
+          "order": 9,
+          "name": "Tomato",
+          "amount": "1",
+          "unit": "large",
+          "notes": "chopped",
+          "pantry_ref_id": "ing_tomato"
+        },
+        {
+          "order": 10,
+          "name": "Turmeric",
+          "amount": "1/2",
+          "unit": "tsp",
+          "notes": "powder",
+          "pantry_ref_id": "ing_turmeric"
+        },
+        {
+          "order": 11,
+          "name": "Coriander Seed Powder",
+          "amount": "1.5",
+          "unit": "tsp",
+          "notes": "freshly ground",
+          "pantry_ref_id": "ing_coriander_seeds"
+        },
+        {
+          "order": 12,
+          "name": "Black Peppercorns (Kali Mirch)",
+          "amount": "1/4",
+          "unit": "tsp",
+          "notes": "cracked at the end",
+          "pantry_ref_id": "ing_black_pepper"
+        },
+        {
+          "order": 13,
+          "name": "Lemon",
+          "amount": "1",
+          "unit": "medium",
+          "notes": "juiced at the table",
+          "pantry_ref_id": "ing_lemon"
+        },
+        {
+          "order": 14,
+          "name": "Rock Salt (Sendha Namak)",
+          "amount": "1.5",
+          "unit": "tsp",
+          "notes": "to taste",
+          "pantry_ref_id": "ing_rock_salt"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Pressure cook both dals with turmeric and 3.5 cups water for 4 whistles, then whisk smooth."
+        },
+        {
+          "step": 2,
+          "text": "Heat ghee, crackle cumin and sesame seeds together, add hing and ginger, then the chopped tomato and coriander powder."
+        },
+        {
+          "step": 3,
+          "text": "Cook until the tomato collapses into the ghee, about 6 minutes, then stir this into the cooked dal with salt."
+        },
+        {
+          "step": 4,
+          "text": "Simmer for 10 minutes, then add the chopped spinach and cook for just 4 to 5 minutes more so it stays green and alive."
+        },
+        {
+          "step": 5,
+          "text": "Crack black pepper over the top, and squeeze the lemon in at the table rather than in the pot."
+        }
+      ],
+      "created_at": "2026-09-15T21:00:00Z",
+      "updated_at": "2026-09-15T21:00:00Z"
+    }
+  ],
+  "pantry_ingredients": [
+    {
+      "id": "ing_turmeric",
+      "names": {
+        "en": "Turmeric",
+        "hi": "हल्दी",
+        "mr": "हळद"
+      },
+      "category": "Spices & Healing Herbs",
+      "nutrition_per_100g": {
+        "calories": "354 kcal",
+        "protein": "7.8g",
+        "carbs": "65g",
+        "fat": "9.9g",
+        "fiber": "21g",
+        "zinc": "4.3 mg",
+        "iron": "41.4 mg",
+        "calcium": "182 mg"
+      },
+      "active_compounds": "Curcumin, Manganese, Potassium, Vitamin B6",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta = | Kapha ↓",
+        "rasa_taste": "Tikta (Bitter), Katu (Pungent)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "Tridoshic in moderation. Powerful blood purifier (Rakta Shodhaka), anti-inflammatory, kindles Agni without aggravating Pitta, enhances Ojas and skin luster (Varnya)."
+      },
+      "created_at": "2026-09-14T20:50:00Z"
+    },
+    {
+      "id": "ing_cumin",
+      "names": {
+        "en": "Cumin Seeds (Jeera)",
+        "hi": "जीरा",
+        "mr": "जिरे"
+      },
+      "category": "Spices & Healing Herbs",
+      "nutrition_per_100g": {
+        "calories": "375 kcal",
+        "protein": "18g",
+        "carbs": "44g",
+        "fat": "22g",
+        "fiber": "10.5g",
+        "zinc": "4.8 mg",
+        "iron": "66.4 mg",
+        "calcium": "931 mg"
+      },
+      "active_compounds": "Thymol, Cuminaldehyde, Magnesium, Phosphorus",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta = | Kapha ↓",
+        "rasa_taste": "Katu (Pungent), Tikta (Bitter)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "Supreme Deepana (kindles digestive fire) and Pachana (clears toxins/Ama). Relieves bloating and abdominal cramps while calming Vata and Kapha."
+      },
+      "created_at": "2026-09-14T20:50:00Z"
+    },
+    {
+      "id": "ing_milk",
+      "names": {
+        "en": "Whole Cow Milk",
+        "hi": "दूध",
+        "mr": "दूध"
+      },
+      "category": "Dairy & Ojas Builders",
+      "nutrition_per_100g": {
+        "calories": "62 kcal",
+        "protein": "3.3g",
+        "carbs": "4.8g",
+        "fat": "3.3g",
+        "fiber": "0g",
+        "zinc": "0.4 mg",
+        "iron": "0.03 mg",
+        "calcium": "120 mg"
+      },
+      "active_compounds": "Casein, Whey Protein, Vitamin B12, Riboflavin, Phosphorus",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↓ | Kapha ↑",
+        "rasa_taste": "Madhura (Sweet)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "The foremost Ojas-building food (Jivaniya). Best taken warm, spiced and alone — never with salt, sour fruit or a full meal, which Ayurveda considers Viruddha Ahara (incompatible)."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_black_pepper",
+      "names": {
+        "en": "Black Peppercorns",
+        "hi": "काली मिर्च",
+        "mr": "काळी मिरी"
+      },
+      "category": "Spices & Healing Herbs",
+      "nutrition_per_100g": {
+        "calories": "251 kcal",
+        "protein": "10.4g",
+        "carbs": "64g",
+        "fat": "3.3g",
+        "fiber": "25g",
+        "zinc": "1.4 mg",
+        "iron": "9.7 mg",
+        "calcium": "443 mg"
+      },
+      "active_compounds": "Piperine, Manganese, Vitamin K",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↑ | Kapha ↓",
+        "rasa_taste": "Katu (Pungent)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "One third of Trikatu, the classic digestive triad. Piperine acts as a Yogavahi — a carrier that dramatically increases the bioavailability of turmeric and other herbs."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_cardamom",
+      "names": {
+        "en": "Green Cardamom (Elaichi)",
+        "hi": "इलायची",
+        "mr": "वेलची"
+      },
+      "category": "Spices & Healing Herbs",
+      "nutrition_per_100g": {
+        "calories": "311 kcal",
+        "protein": "10.8g",
+        "carbs": "68g",
+        "fat": "6.7g",
+        "fiber": "28g",
+        "zinc": "7.5 mg",
+        "iron": "14 mg",
+        "calcium": "383 mg"
+      },
+      "active_compounds": "Cineole, Terpinene, Manganese, Potassium",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↓ | Kapha ↓",
+        "rasa_taste": "Madhura (Sweet), Katu (Pungent)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "Rare among pungent spices in being Sheeta, so it aids digestion without inflaming Pitta. Counteracts the mucus-forming quality of milk and clears the breath."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_ghee",
+      "names": {
+        "en": "Pure Desi Cow Ghee",
+        "hi": "घी",
+        "mr": "तूप"
+      },
+      "category": "Dairy & Ojas Builders",
+      "nutrition_per_100g": {
+        "calories": "900 kcal",
+        "protein": "0g",
+        "carbs": "0g",
+        "fat": "100g",
+        "fiber": "0g",
+        "zinc": "0.01 mg",
+        "iron": "0 mg",
+        "calcium": "4 mg"
+      },
+      "active_compounds": "Butyric Acid, CLA, Vitamins A, D, E and K2",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↓ | Kapha ↑ (in excess)",
+        "rasa_taste": "Madhura (Sweet)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "The supreme Rasayana fat. Uniquely kindles Agni while cooling Pitta, carries fat-soluble herbs into deep tissue (Yogavahi), and is considered Medhya — nourishing to intellect and memory."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_paneer",
+      "names": {
+        "en": "Fresh Paneer",
+        "hi": "पनीर",
+        "mr": "पनीर"
+      },
+      "category": "Dairy & Ojas Builders",
+      "nutrition_per_100g": {
+        "calories": "265 kcal",
+        "protein": "18.3g",
+        "carbs": "6.1g",
+        "fat": "20.8g",
+        "fiber": "0g",
+        "zinc": "1.9 mg",
+        "iron": "0.2 mg",
+        "calcium": "420 mg"
+      },
+      "active_compounds": "Casein, Conjugated Linoleic Acid, Phosphorus, Vitamin B12",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↓ | Kapha ↑",
+        "rasa_taste": "Madhura (Sweet)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "Brimhana — builds bulk and strength quickly, valuable for depleted Vata types. Guru (heavy) and Abhishyandi, so it needs ginger, pepper or ajwain and belongs at midday, not at night."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_curd",
+      "names": {
+        "en": "Fresh Curd (Dahi)",
+        "hi": "दही",
+        "mr": "दही"
+      },
+      "category": "Dairy & Ojas Builders",
+      "nutrition_per_100g": {
+        "calories": "61 kcal",
+        "protein": "3.5g",
+        "carbs": "4.7g",
+        "fat": "3.3g",
+        "fiber": "0g",
+        "zinc": "0.6 mg",
+        "iron": "0.1 mg",
+        "calcium": "121 mg"
+      },
+      "active_compounds": "Lactobacillus cultures, Casein, Vitamin B12, Riboflavin",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↑ | Kapha ↑",
+        "rasa_taste": "Amla (Sour), Madhura (Sweet)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "Grahi and strengthening, but classically forbidden at night and in spring. Whisking with water into buttermilk (Takra) transforms it into one of the lightest and most digestible foods there is."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_moong_dal",
+      "names": {
+        "en": "Split Yellow Moong Dal",
+        "hi": "मूंग दाल",
+        "mr": "मुगाची डाळ"
+      },
+      "category": "Lentils & Pulses (Dhanya)",
+      "nutrition_per_100g": {
+        "calories": "347 kcal",
+        "protein": "24g",
+        "carbs": "59g",
+        "fat": "1.2g",
+        "fiber": "16g",
+        "zinc": "2.7 mg",
+        "iron": "3.9 mg",
+        "calcium": "75 mg"
+      },
+      "active_compounds": "Lysine, Folate, Magnesium, Potassium, Resistant Starch",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata = | Pitta ↓ | Kapha ↓",
+        "rasa_taste": "Madhura (Sweet), Kashaya (Astringent)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "The single most sattvic and tridoshic pulse. The foundation of Kitchari and the first solid food given after illness or fasting because it nourishes without creating Ama."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_whole_moong",
+      "names": {
+        "en": "Whole Green Moong",
+        "hi": "साबुत मूंग",
+        "mr": "अख्खे मूग"
+      },
+      "category": "Lentils & Pulses (Dhanya)",
+      "nutrition_per_100g": {
+        "calories": "347 kcal",
+        "protein": "24g",
+        "carbs": "63g",
+        "fat": "1.2g",
+        "fiber": "16g",
+        "zinc": "2.7 mg",
+        "iron": "6.7 mg",
+        "calcium": "124 mg"
+      },
+      "active_compounds": "Lysine, Vitexin, Folate, Manganese",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↑ (mild) | Pitta ↓ | Kapha ↓",
+        "rasa_taste": "Madhura (Sweet), Kashaya (Astringent)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "Sprouting raises the Prana and vitamin C content sharply while breaking down phytates. The intact skin adds fibre but also Vata, so hing and ginger are the traditional companions."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_toor_dal",
+      "names": {
+        "en": "Toor Dal (Pigeon Pea)",
+        "hi": "तूर दाल",
+        "mr": "तुरीची डाळ"
+      },
+      "category": "Lentils & Pulses (Dhanya)",
+      "nutrition_per_100g": {
+        "calories": "343 kcal",
+        "protein": "22g",
+        "carbs": "63g",
+        "fat": "1.5g",
+        "fiber": "15g",
+        "zinc": "2.8 mg",
+        "iron": "3.9 mg",
+        "calcium": "130 mg"
+      },
+      "active_compounds": "Folate, Tryptophan, Potassium, Magnesium",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↑ | Pitta ↓ | Kapha ↓",
+        "rasa_taste": "Kashaya (Astringent), Madhura (Sweet)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "The everyday dal of most Indian households. Gas-forming for Vata constitutions unless cooked with hing, ajwain and enough ghee; excellent for cooling summer Pitta."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_masoor_dal",
+      "names": {
+        "en": "Masoor Dal (Red Lentil)",
+        "hi": "मसूर दाल",
+        "mr": "मसूर डाळ"
+      },
+      "category": "Lentils & Pulses (Dhanya)",
+      "nutrition_per_100g": {
+        "calories": "352 kcal",
+        "protein": "25g",
+        "carbs": "60g",
+        "fat": "1.1g",
+        "fiber": "11g",
+        "zinc": "3.3 mg",
+        "iron": "7.5 mg",
+        "calcium": "56 mg"
+      },
+      "active_compounds": "Folate, Molybdenum, Polyphenols, Thiamine",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↑ | Pitta ↓ | Kapha ↓",
+        "rasa_taste": "Madhura (Sweet), Kashaya (Astringent)",
+        "virya_potency": "Ushna (mildly Heating)",
+        "significance": "The fastest-cooking and most easily absorbed dal, breaking down to a light broth. Prescribed in convalescence when Agni is too weak for heavier pulses."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_urad_dal",
+      "names": {
+        "en": "Urad Dal (Split Black Gram)",
+        "hi": "उड़द दाल",
+        "mr": "उडदाची डाळ"
+      },
+      "category": "Lentils & Pulses (Dhanya)",
+      "nutrition_per_100g": {
+        "calories": "341 kcal",
+        "protein": "25g",
+        "carbs": "59g",
+        "fat": "1.6g",
+        "fiber": "18g",
+        "zinc": "3.4 mg",
+        "iron": "7.6 mg",
+        "calcium": "138 mg"
+      },
+      "active_compounds": "Lysine, Folate, Magnesium, Potassium",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↑ | Kapha ↑",
+        "rasa_taste": "Madhura (Sweet)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "Balya and Vrishya — the strength-building pulse, traditionally given to wrestlers and to those recovering from Vata depletion. Heavy and Snigdha, so best fermented into idli or dosa."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_chana_dal",
+      "names": {
+        "en": "Chana Dal (Split Bengal Gram)",
+        "hi": "चना दाल",
+        "mr": "हरभरा डाळ"
+      },
+      "category": "Lentils & Pulses (Dhanya)",
+      "nutrition_per_100g": {
+        "calories": "360 kcal",
+        "protein": "20g",
+        "carbs": "60g",
+        "fat": "5.3g",
+        "fiber": "15g",
+        "zinc": "2.8 mg",
+        "iron": "5.3 mg",
+        "calcium": "56 mg"
+      },
+      "active_compounds": "Resistant Starch, Folate, Molybdenum, Manganese",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↑ | Pitta ↓ | Kapha ↓",
+        "rasa_taste": "Kashaya (Astringent), Madhura (Sweet)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "Very low glycemic index, making it the preferred pulse in Ayurvedic diabetes regimens. Needs soaking and generous hing to keep it from aggravating Vata."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_kabuli_chana",
+      "names": {
+        "en": "Kabuli Chana (White Chickpeas)",
+        "hi": "काबुली चना",
+        "mr": "काबुली चणे"
+      },
+      "category": "Lentils & Pulses (Dhanya)",
+      "nutrition_per_100g": {
+        "calories": "364 kcal",
+        "protein": "19g",
+        "carbs": "61g",
+        "fat": "6g",
+        "fiber": "17g",
+        "zinc": "3.4 mg",
+        "iron": "6.2 mg",
+        "calcium": "105 mg"
+      },
+      "active_compounds": "Folate, Manganese, Isoflavones, Resistant Starch",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↑ | Pitta ↓ | Kapha ↓",
+        "rasa_taste": "Kashaya (Astringent), Madhura (Sweet)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "Substantial and satisfying, but Guru and Vatala. Always discard the soaking water and cook with ajwain, ginger and hing to make it Pathya."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_kala_chana",
+      "names": {
+        "en": "Kala Chana (Black Chickpeas)",
+        "hi": "काला चना",
+        "mr": "काळे चणे"
+      },
+      "category": "Lentils & Pulses (Dhanya)",
+      "nutrition_per_100g": {
+        "calories": "360 kcal",
+        "protein": "20g",
+        "carbs": "61g",
+        "fat": "5g",
+        "fiber": "18g",
+        "zinc": "3.0 mg",
+        "iron": "8.9 mg",
+        "calcium": "202 mg"
+      },
+      "active_compounds": "Anthocyanins, Folate, Manganese, Polyphenols",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↑ | Pitta ↓ | Kapha ↓↓",
+        "rasa_taste": "Kashaya (Astringent), Madhura (Sweet)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "Strongly Kapha-reducing and unusually iron-dense. The classic Naivedya offering of Navaratri and a staple of temple sundal, prepared without onion or garlic."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_rajma",
+      "names": {
+        "en": "Rajma (Red Kidney Beans)",
+        "hi": "राजमा",
+        "mr": "राजमा"
+      },
+      "category": "Lentils & Pulses (Dhanya)",
+      "nutrition_per_100g": {
+        "calories": "333 kcal",
+        "protein": "24g",
+        "carbs": "60g",
+        "fat": "0.8g",
+        "fiber": "25g",
+        "zinc": "2.8 mg",
+        "iron": "8.2 mg",
+        "calcium": "143 mg"
+      },
+      "active_compounds": "Anthocyanins, Folate, Molybdenum, Resistant Starch",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↑↑ | Pitta ↓ | Kapha ↓",
+        "rasa_taste": "Kashaya (Astringent), Madhura (Sweet)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "The heaviest of the common pulses and the most Vatala. Must be soaked 8 hours, cooked thoroughly, and spiced warm — undercooked kidney beans are genuinely toxic."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_besan",
+      "names": {
+        "en": "Gram Flour (Besan)",
+        "hi": "बेसन",
+        "mr": "बेसन"
+      },
+      "category": "Lentils & Pulses (Dhanya)",
+      "nutrition_per_100g": {
+        "calories": "387 kcal",
+        "protein": "22g",
+        "carbs": "58g",
+        "fat": "6.7g",
+        "fiber": "11g",
+        "zinc": "2.8 mg",
+        "iron": "4.9 mg",
+        "calcium": "45 mg"
+      },
+      "active_compounds": "Folate, Thiamine, Magnesium, Resistant Starch",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↑ | Pitta ↓ | Kapha ↓",
+        "rasa_taste": "Kashaya (Astringent), Madhura (Sweet)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "Ruksha and drying, which makes it the flour of choice for Kapha excess. Always paired with ajwain, which is the specific corrective for the bloating besan can cause."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_soya_chunks",
+      "names": {
+        "en": "Soya Chunks (Nutri Nuggets)",
+        "hi": "सोया बड़ी",
+        "mr": "सोया वडी"
+      },
+      "category": "Plant Proteins",
+      "nutrition_per_100g": {
+        "calories": "345 kcal",
+        "protein": "52g",
+        "carbs": "33g",
+        "fat": "0.5g",
+        "fiber": "13g",
+        "zinc": "4.9 mg",
+        "iron": "20 mg",
+        "calcium": "350 mg"
+      },
+      "active_compounds": "Complete amino acid profile, Isoflavones, Lecithin",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↑ | Pitta = | Kapha ↑",
+        "rasa_taste": "Kashaya (Astringent), Madhura (Sweet)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "By far the most protein-dense vegetarian ingredient in the pantry, but Guru and Abhishyandi in classical terms. Best at midday, well spiced, and in moderate rather than daily portions."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_tofu",
+      "names": {
+        "en": "Firm Tofu",
+        "hi": "टोफू",
+        "mr": "टोफू"
+      },
+      "category": "Plant Proteins",
+      "nutrition_per_100g": {
+        "calories": "144 kcal",
+        "protein": "15.8g",
+        "carbs": "4.3g",
+        "fat": "8.7g",
+        "fiber": "2.3g",
+        "zinc": "1.6 mg",
+        "iron": "2.7 mg",
+        "calcium": "350 mg"
+      },
+      "active_compounds": "Complete protein, Isoflavones, Calcium sulfate, Manganese",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↑ | Pitta ↓ | Kapha ↑",
+        "rasa_taste": "Madhura (Sweet), Kashaya (Astringent)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "A cooling, dairy-free source of complete protein. Its Sheeta and Guru nature demands warming preparation — ginger, cumin, turmeric and dry heat rather than steaming."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_almonds",
+      "names": {
+        "en": "Almonds",
+        "hi": "बादाम",
+        "mr": "बदाम"
+      },
+      "category": "Nuts, Seeds & Healthy Fats",
+      "nutrition_per_100g": {
+        "calories": "579 kcal",
+        "protein": "21g",
+        "carbs": "22g",
+        "fat": "50g",
+        "fiber": "12.5g",
+        "zinc": "3.1 mg",
+        "iron": "3.7 mg",
+        "calcium": "269 mg"
+      },
+      "active_compounds": "Vitamin E, Magnesium, Riboflavin, Monounsaturated fats",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↑ (mild) | Kapha ↑",
+        "rasa_taste": "Madhura (Sweet)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "Medhya Rasayana — the classical brain and nerve tonic. Must be soaked overnight and peeled, as the skin is considered Pitta-aggravating and blocks absorption."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_peanuts",
+      "names": {
+        "en": "Raw Peanuts",
+        "hi": "मूंगफली",
+        "mr": "शेंगदाणे"
+      },
+      "category": "Nuts, Seeds & Healthy Fats",
+      "nutrition_per_100g": {
+        "calories": "567 kcal",
+        "protein": "26g",
+        "carbs": "16g",
+        "fat": "49g",
+        "fiber": "8.5g",
+        "zinc": "3.3 mg",
+        "iron": "4.6 mg",
+        "calcium": "92 mg"
+      },
+      "active_compounds": "Resveratrol, Niacin, Biotin, Monounsaturated fats",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↑ | Kapha ↑",
+        "rasa_taste": "Madhura (Sweet)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "Guru and oily, building bulk quickly. Always roast and remove the skins, which are hard to digest, and moderate the quantity when Pitta is high."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_sesame_seeds",
+      "names": {
+        "en": "Sesame Seeds (Til)",
+        "hi": "तिल",
+        "mr": "तीळ"
+      },
+      "category": "Nuts, Seeds & Healthy Fats",
+      "nutrition_per_100g": {
+        "calories": "573 kcal",
+        "protein": "18g",
+        "carbs": "23g",
+        "fat": "50g",
+        "fiber": "12g",
+        "zinc": "7.8 mg",
+        "iron": "14.6 mg",
+        "calcium": "975 mg"
+      },
+      "active_compounds": "Sesamin, Sesamol, Copper, Calcium, Phytosterols",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↑ | Kapha ↓",
+        "rasa_taste": "Madhura (Sweet), Tikta (Bitter), Kashaya (Astringent)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "The supreme Vata-pacifying seed and the highest plant calcium in this pantry. Central to Shishira (winter) foods and to the til-gud sweets of Makar Sankranti."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_pumpkin_seeds",
+      "names": {
+        "en": "Pumpkin Seeds",
+        "hi": "कद्दू के बीज",
+        "mr": "भोपळ्याच्या बिया"
+      },
+      "category": "Nuts, Seeds & Healthy Fats",
+      "nutrition_per_100g": {
+        "calories": "559 kcal",
+        "protein": "30g",
+        "carbs": "11g",
+        "fat": "49g",
+        "fiber": "6g",
+        "zinc": "7.8 mg",
+        "iron": "8.8 mg",
+        "calcium": "46 mg"
+      },
+      "active_compounds": "Cucurbitin, Magnesium, Tryptophan, Phytosterols",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta = | Kapha = ",
+        "rasa_taste": "Madhura (Sweet), Kashaya (Astringent)",
+        "virya_potency": "Sheeta (mildly Cooling)",
+        "significance": "The most zinc-dense seed available and among the highest in plant protein. Traditionally used as a gentle anti-parasitic (Krimighna) and a support for the male reproductive tissue."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_cashews",
+      "names": {
+        "en": "Cashews",
+        "hi": "काजू",
+        "mr": "काजू"
+      },
+      "category": "Nuts, Seeds & Healthy Fats",
+      "nutrition_per_100g": {
+        "calories": "553 kcal",
+        "protein": "18g",
+        "carbs": "30g",
+        "fat": "44g",
+        "fiber": "3.3g",
+        "zinc": "5.8 mg",
+        "iron": "6.7 mg",
+        "calcium": "37 mg"
+      },
+      "active_compounds": "Oleic acid, Copper, Magnesium, Tryptophan",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↑ | Kapha ↑",
+        "rasa_taste": "Madhura (Sweet)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "Snigdha and grounding, excellent for depleted Vata. Soaked and blended it makes a sattvic cream that replaces dairy in gravies without any onion or garlic."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_quinoa",
+      "names": {
+        "en": "Quinoa",
+        "hi": "क्विनोआ",
+        "mr": "क्विनोआ"
+      },
+      "category": "Grains & Millets (Dhanya)",
+      "nutrition_per_100g": {
+        "calories": "368 kcal",
+        "protein": "14g",
+        "carbs": "64g",
+        "fat": "6g",
+        "fiber": "7g",
+        "zinc": "3.1 mg",
+        "iron": "4.6 mg",
+        "calcium": "47 mg"
+      },
+      "active_compounds": "Complete amino acid profile, Quercetin, Manganese, Magnesium",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata = | Pitta ↓ | Kapha ↓",
+        "rasa_taste": "Madhura (Sweet), Kashaya (Astringent)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "Laghu and Ruksha, so it suits Kapha far better than rice or wheat. One of the few grains carrying all nine essential amino acids, making it a genuine standalone protein."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_amaranth",
+      "names": {
+        "en": "Amaranth Seeds (Rajgira)",
+        "hi": "राजगिरा",
+        "mr": "राजगिरा"
+      },
+      "category": "Grains & Millets (Dhanya)",
+      "nutrition_per_100g": {
+        "calories": "371 kcal",
+        "protein": "14g",
+        "carbs": "65g",
+        "fat": "7g",
+        "fiber": "6.7g",
+        "zinc": "2.9 mg",
+        "iron": "7.6 mg",
+        "calcium": "159 mg"
+      },
+      "active_compounds": "Lysine, Squalene, Manganese, Magnesium, Phosphorus",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↓ | Kapha = ",
+        "rasa_taste": "Madhura (Sweet)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "A Phalahara grain permitted during vrata and Navaratri. Rare among grains in retaining lysine, which makes it a complete protein and deeply Ojas-building cooked in milk."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_brown_rice",
+      "names": {
+        "en": "Brown Rice",
+        "hi": "भूरा चावल",
+        "mr": "तपकिरी तांदूळ"
+      },
+      "category": "Grains & Millets (Dhanya)",
+      "nutrition_per_100g": {
+        "calories": "370 kcal",
+        "protein": "7.9g",
+        "carbs": "77g",
+        "fat": "2.9g",
+        "fiber": "3.5g",
+        "zinc": "2.0 mg",
+        "iron": "1.5 mg",
+        "calcium": "23 mg"
+      },
+      "active_compounds": "Gamma-oryzanol, Manganese, Selenium, B vitamins",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↓ | Kapha ↑",
+        "rasa_taste": "Madhura (Sweet)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "The retained bran adds fibre and minerals but makes it Guru and slower to digest than white rice. Soak before cooking and pair with ghee so Vata is not disturbed."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_basmati_rice",
+      "names": {
+        "en": "Basmati Rice",
+        "hi": "बासमती चावल",
+        "mr": "बासमती तांदूळ"
+      },
+      "category": "Grains & Millets (Dhanya)",
+      "nutrition_per_100g": {
+        "calories": "350 kcal",
+        "protein": "7.1g",
+        "carbs": "78g",
+        "fat": "0.7g",
+        "fiber": "1.3g",
+        "zinc": "1.1 mg",
+        "iron": "0.8 mg",
+        "calcium": "10 mg"
+      },
+      "active_compounds": "2-acetyl-1-pyrroline (aroma), Thiamine, Niacin",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↓ | Kapha = ",
+        "rasa_taste": "Madhura (Sweet)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "Considered the most sattvic of grains — light, easily digested and never obstructing the channels. Aged basmati is preferred, as fresh new rice is held to be heavier and more Kaphakara."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_bajra_flour",
+      "names": {
+        "en": "Bajra Flour (Pearl Millet)",
+        "hi": "बाजरा",
+        "mr": "बाजरी"
+      },
+      "category": "Grains & Millets (Dhanya)",
+      "nutrition_per_100g": {
+        "calories": "361 kcal",
+        "protein": "11.6g",
+        "carbs": "67g",
+        "fat": "5g",
+        "fiber": "11g",
+        "zinc": "3.1 mg",
+        "iron": "8.0 mg",
+        "calcium": "42 mg"
+      },
+      "active_compounds": "Resistant starch, Magnesium, Phosphorus, Niacin",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↑ | Pitta ↑ | Kapha ↓↓",
+        "rasa_taste": "Madhura (Sweet), Kashaya (Astringent)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "A winter grain in the rural Deccan and Rajasthan for good reason — strongly heating and Kapha-clearing. Always eaten with ghee or white butter to offset its dryness."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_spinach",
+      "names": {
+        "en": "Fresh Spinach (Palak)",
+        "hi": "पालक",
+        "mr": "पालक"
+      },
+      "category": "Vegetables & Greens (Shaka)",
+      "nutrition_per_100g": {
+        "calories": "23 kcal",
+        "protein": "2.9g",
+        "carbs": "3.6g",
+        "fat": "0.4g",
+        "fiber": "2.2g",
+        "zinc": "0.5 mg",
+        "iron": "2.7 mg",
+        "calcium": "99 mg"
+      },
+      "active_compounds": "Lutein, Folate, Vitamin K, Nitrates, Oxalates",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↑ | Pitta ↓ | Kapha ↓",
+        "rasa_taste": "Kashaya (Astringent), Tikta (Bitter)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "Rakta Shodhaka — a blood purifier and builder. Its oxalates bind calcium, so Ayurveda advises cooking rather than eating raw and avoiding it alongside large amounts of dairy."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_tomato",
+      "names": {
+        "en": "Tomato",
+        "hi": "टमाटर",
+        "mr": "टोमॅटो"
+      },
+      "category": "Vegetables & Greens (Shaka)",
+      "nutrition_per_100g": {
+        "calories": "18 kcal",
+        "protein": "0.9g",
+        "carbs": "3.9g",
+        "fat": "0.2g",
+        "fiber": "1.2g",
+        "zinc": "0.17 mg",
+        "iron": "0.3 mg",
+        "calcium": "10 mg"
+      },
+      "active_compounds": "Lycopene, Vitamin C, Potassium, Beta-carotene",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↑ | Kapha ↑",
+        "rasa_taste": "Amla (Sour), Madhura (Sweet)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "Considered mildly Rajasic and acidic in classical terms. Cooking with turmeric and ghee tempers the sourness; strict sattvic kitchens reduce or omit it during Pitta-dominant seasons."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_ginger",
+      "names": {
+        "en": "Fresh Ginger",
+        "hi": "अदरक",
+        "mr": "आले"
+      },
+      "category": "Spices & Healing Herbs",
+      "nutrition_per_100g": {
+        "calories": "80 kcal",
+        "protein": "1.8g",
+        "carbs": "18g",
+        "fat": "0.8g",
+        "fiber": "2g",
+        "zinc": "0.34 mg",
+        "iron": "0.6 mg",
+        "calcium": "16 mg"
+      },
+      "active_compounds": "Gingerol, Shogaol, Zingerone, Potassium",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↑ | Kapha ↓",
+        "rasa_taste": "Katu (Pungent)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "Vishwabheshaja, the universal medicine. A slice with rock salt before eating is the classical Agni-kindler; indispensable for making heavy pulses and dairy digestible."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_green_chilli",
+      "names": {
+        "en": "Green Chilli",
+        "hi": "हरी मिर्च",
+        "mr": "हिरवी मिरची"
+      },
+      "category": "Spices & Healing Herbs",
+      "nutrition_per_100g": {
+        "calories": "40 kcal",
+        "protein": "2g",
+        "carbs": "9g",
+        "fat": "0.2g",
+        "fiber": "1.5g",
+        "zinc": "0.3 mg",
+        "iron": "1.2 mg",
+        "calcium": "18 mg"
+      },
+      "active_compounds": "Capsaicin, Vitamin C, Beta-carotene",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↑ | Pitta ↑↑ | Kapha ↓",
+        "rasa_taste": "Katu (Pungent)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "Rajasic and stimulating rather than sattvic. Use sparingly and deseeded; in strict sattvic cooking black pepper or ginger is substituted for it entirely."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_coriander_leaves",
+      "names": {
+        "en": "Fresh Coriander Leaves",
+        "hi": "हरा धनिया",
+        "mr": "कोथिंबीर"
+      },
+      "category": "Vegetables & Greens (Shaka)",
+      "nutrition_per_100g": {
+        "calories": "23 kcal",
+        "protein": "2.1g",
+        "carbs": "3.7g",
+        "fat": "0.5g",
+        "fiber": "2.8g",
+        "zinc": "0.5 mg",
+        "iron": "1.8 mg",
+        "calcium": "67 mg"
+      },
+      "active_compounds": "Linalool, Vitamin K, Quercetin, Beta-carotene",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata = | Pitta ↓ | Kapha ↓",
+        "rasa_taste": "Kashaya (Astringent), Madhura (Sweet)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "Tridoshic and cooling — the standard finish for any dish that has run hot with chilli or sour spice. Also traditionally used to help the body clear heavy metals."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_coriander_seeds",
+      "names": {
+        "en": "Coriander Seeds (Dhania)",
+        "hi": "धनिया",
+        "mr": "धणे"
+      },
+      "category": "Spices & Healing Herbs",
+      "nutrition_per_100g": {
+        "calories": "298 kcal",
+        "protein": "12g",
+        "carbs": "55g",
+        "fat": "17.8g",
+        "fiber": "42g",
+        "zinc": "4.7 mg",
+        "iron": "16.3 mg",
+        "calcium": "709 mg"
+      },
+      "active_compounds": "Linalool, Petroselinic acid, Manganese",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↓ | Kapha ↓",
+        "rasa_taste": "Kashaya (Astringent), Madhura (Sweet), Tikta (Bitter)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "Genuinely tridoshic and one of very few spices that aids digestion while actively cooling Pitta. Dhania water is the classic remedy for burning urination and acidity."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_asafoetida",
+      "names": {
+        "en": "Asafoetida (Hing)",
+        "hi": "हींग",
+        "mr": "हिंग"
+      },
+      "category": "Spices & Healing Herbs",
+      "nutrition_per_100g": {
+        "calories": "297 kcal",
+        "protein": "4g",
+        "carbs": "68g",
+        "fat": "1.1g",
+        "fiber": "4g",
+        "zinc": "0.8 mg",
+        "iron": "39 mg",
+        "calcium": "690 mg"
+      },
+      "active_compounds": "Ferulic acid, Umbelliferone, Volatile sulfur compounds",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓↓ | Pitta ↑ | Kapha ↓",
+        "rasa_taste": "Katu (Pungent)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "The keystone of sattvic cooking — it delivers the savoury depth of onion and garlic without their Rajasic and Tamasic qualities. Must be bloomed in hot ghee to work."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_rock_salt",
+      "names": {
+        "en": "Rock Salt (Sendha Namak)",
+        "hi": "सेंधा नमक",
+        "mr": "शेंदेलोण"
+      },
+      "category": "Condiments & Sweeteners",
+      "nutrition_per_100g": {
+        "calories": "0 kcal",
+        "protein": "0g",
+        "carbs": "0g",
+        "fat": "0g",
+        "fiber": "0g",
+        "zinc": "0.1 mg",
+        "iron": "0.4 mg",
+        "calcium": "24 mg"
+      },
+      "active_compounds": "Sodium chloride with trace magnesium, potassium and sulfur",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta = | Kapha = ",
+        "rasa_taste": "Lavana (Salty)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "Saindhava lavana is named the best of all salts in the classical texts — the only one that does not aggravate Pitta or cause fluid retention, and the only salt permitted during vrata."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_curry_leaves",
+      "names": {
+        "en": "Curry Leaves",
+        "hi": "कढ़ी पत्ता",
+        "mr": "कढीपत्ता"
+      },
+      "category": "Spices & Healing Herbs",
+      "nutrition_per_100g": {
+        "calories": "108 kcal",
+        "protein": "6.1g",
+        "carbs": "18.7g",
+        "fat": "1g",
+        "fiber": "6.4g",
+        "zinc": "0.2 mg",
+        "iron": "0.9 mg",
+        "calcium": "830 mg"
+      },
+      "active_compounds": "Mahanimbine, Koenigine, Beta-carotene, Calcium",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata = | Pitta ↓ | Kapha ↓",
+        "rasa_taste": "Tikta (Bitter), Kashaya (Astringent)",
+        "virya_potency": "Ushna (mildly Heating)",
+        "significance": "Deepana and Keshya — kindles digestion and is the classical hair tonic. Eat the leaves rather than pushing them aside; the calcium and carotenes are in the leaf, not the oil."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_mustard_seeds",
+      "names": {
+        "en": "Mustard Seeds (Rai)",
+        "hi": "राई",
+        "mr": "मोहरी"
+      },
+      "category": "Spices & Healing Herbs",
+      "nutrition_per_100g": {
+        "calories": "508 kcal",
+        "protein": "26g",
+        "carbs": "28g",
+        "fat": "36g",
+        "fiber": "12g",
+        "zinc": "5.7 mg",
+        "iron": "9.2 mg",
+        "calcium": "266 mg"
+      },
+      "active_compounds": "Sinigrin, Allyl isothiocyanate, Selenium, Magnesium",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↑ | Kapha ↓",
+        "rasa_taste": "Katu (Pungent), Tikta (Bitter)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "Strongly Kapha-dissolving and Ama-clearing. The seeds must pop fully in hot ghee — unpopped mustard stays raw and bitter and will sour the whole dish."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_coconut",
+      "names": {
+        "en": "Fresh Coconut",
+        "hi": "नारियल",
+        "mr": "नारळ"
+      },
+      "category": "Nuts, Seeds & Healthy Fats",
+      "nutrition_per_100g": {
+        "calories": "354 kcal",
+        "protein": "3.3g",
+        "carbs": "15g",
+        "fat": "33g",
+        "fiber": "9g",
+        "zinc": "1.1 mg",
+        "iron": "2.4 mg",
+        "calcium": "14 mg"
+      },
+      "active_compounds": "Lauric acid, Medium-chain triglycerides, Manganese",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↓ | Kapha ↑",
+        "rasa_taste": "Madhura (Sweet)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "The great Pitta pacifier of the coastal south. Add it grated and fresh off the heat — frying destroys both its cooling virya and its delicate sweetness."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_lemon",
+      "names": {
+        "en": "Lemon",
+        "hi": "नींबू",
+        "mr": "लिंबू"
+      },
+      "category": "Condiments & Sweeteners",
+      "nutrition_per_100g": {
+        "calories": "29 kcal",
+        "protein": "1.1g",
+        "carbs": "9g",
+        "fat": "0.3g",
+        "fiber": "2.8g",
+        "zinc": "0.06 mg",
+        "iron": "0.6 mg",
+        "calcium": "26 mg"
+      },
+      "active_compounds": "Citric acid, Vitamin C, Limonene, Potassium",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↑ | Kapha ↓",
+        "rasa_taste": "Amla (Sour)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "Ruchya — restores appetite and taste. Squeezed in raw at the table, its vitamin C converts plant iron into the absorbable form, which is why it belongs on every dal and green."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_jaggery",
+      "names": {
+        "en": "Jaggery (Gud)",
+        "hi": "गुड़",
+        "mr": "गूळ"
+      },
+      "category": "Condiments & Sweeteners",
+      "nutrition_per_100g": {
+        "calories": "383 kcal",
+        "protein": "0.4g",
+        "carbs": "97g",
+        "fat": "0.1g",
+        "fiber": "0g",
+        "zinc": "0.2 mg",
+        "iron": "11 mg",
+        "calcium": "85 mg"
+      },
+      "active_compounds": "Sucrose, Molasses minerals, Iron, Potassium",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta = | Kapha ↑",
+        "rasa_taste": "Madhura (Sweet)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "Unlike refined sugar, jaggery is warming and does not clog the channels. Old jaggery is classically described as light and cleansing; never add it to boiling milk or it will split."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_fenugreek_leaves",
+      "names": {
+        "en": "Fenugreek Leaves (Methi)",
+        "hi": "मेथी",
+        "mr": "मेथी"
+      },
+      "category": "Vegetables & Greens (Shaka)",
+      "nutrition_per_100g": {
+        "calories": "49 kcal",
+        "protein": "4.4g",
+        "carbs": "6g",
+        "fat": "0.9g",
+        "fiber": "1.1g",
+        "zinc": "0.4 mg",
+        "iron": "1.9 mg",
+        "calcium": "395 mg"
+      },
+      "active_compounds": "Trigonelline, 4-hydroxyisoleucine, Galactomannan, Vitamin K",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↑ | Kapha ↓",
+        "rasa_taste": "Tikta (Bitter)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "Deepana and Vata-pacifying despite its bitterness. Long used in Ayurveda to steady blood sugar and support lactation; crush the dried leaves between the palms to release the aroma."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_ajwain",
+      "names": {
+        "en": "Carom Seeds (Ajwain)",
+        "hi": "अजवाइन",
+        "mr": "ओवा"
+      },
+      "category": "Spices & Healing Herbs",
+      "nutrition_per_100g": {
+        "calories": "305 kcal",
+        "protein": "16g",
+        "carbs": "43g",
+        "fat": "25g",
+        "fiber": "39g",
+        "zinc": "4.2 mg",
+        "iron": "31 mg",
+        "calcium": "1525 mg"
+      },
+      "active_compounds": "Thymol, Para-cymene, Niacin, Fibre",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓↓ | Pitta ↑ | Kapha ↓",
+        "rasa_taste": "Katu (Pungent), Tikta (Bitter)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "The specific remedy for gas and colic (Vatanulomana). Added to besan, chickpeas and kidney beans precisely because it neutralises the compounds in them that cause bloating."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_cinnamon",
+      "names": {
+        "en": "Cinnamon (Dalchini)",
+        "hi": "दालचीनी",
+        "mr": "दालचिनी"
+      },
+      "category": "Spices & Healing Herbs",
+      "nutrition_per_100g": {
+        "calories": "247 kcal",
+        "protein": "4g",
+        "carbs": "81g",
+        "fat": "1.2g",
+        "fiber": "53g",
+        "zinc": "1.8 mg",
+        "iron": "8.3 mg",
+        "calcium": "1002 mg"
+      },
+      "active_compounds": "Cinnamaldehyde, Eugenol, Manganese, Polyphenols",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↑ | Kapha ↓",
+        "rasa_taste": "Katu (Pungent), Madhura (Sweet), Tikta (Bitter)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "Part of the Trijata group. Opens the circulatory channels (Srotoshodhana) and supports healthy blood sugar; a little goes far, as excess aggravates Pitta quickly."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_bottle_gourd",
+      "names": {
+        "en": "Bottle Gourd (Lauki)",
+        "hi": "लौकी",
+        "mr": "दुधी भोपळा"
+      },
+      "category": "Vegetables & Greens (Shaka)",
+      "nutrition_per_100g": {
+        "calories": "15 kcal",
+        "protein": "0.6g",
+        "carbs": "3.4g",
+        "fat": "0.1g",
+        "fiber": "0.5g",
+        "zinc": "0.1 mg",
+        "iron": "0.2 mg",
+        "calcium": "26 mg"
+      },
+      "active_compounds": "Cucurbitacins, Vitamin C, Potassium, high water content",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↑ | Pitta ↓ | Kapha ↓",
+        "rasa_taste": "Madhura (Sweet)",
+        "virya_potency": "Sheeta (Cooling)",
+        "significance": "The lightest of all cooked vegetables and a staple of Pathya (therapeutic) diets. Always taste a raw sliver first — a bitter lauki contains toxic cucurbitacins and must be discarded."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    },
+    {
+      "id": "ing_carrot",
+      "names": {
+        "en": "Carrot",
+        "hi": "गाजर",
+        "mr": "गाजर"
+      },
+      "category": "Vegetables & Greens (Shaka)",
+      "nutrition_per_100g": {
+        "calories": "41 kcal",
+        "protein": "0.9g",
+        "carbs": "10g",
+        "fat": "0.2g",
+        "fiber": "2.8g",
+        "zinc": "0.24 mg",
+        "iron": "0.3 mg",
+        "calcium": "33 mg"
+      },
+      "active_compounds": "Beta-carotene, Falcarinol, Biotin, Potassium",
+      "ayurvedic_properties": {
+        "dosha_effect": "Vata ↓ | Pitta ↑ (mild) | Kapha ↓",
+        "rasa_taste": "Madhura (Sweet), Tikta (Bitter)",
+        "virya_potency": "Ushna (Heating)",
+        "significance": "Chakshushya — supports the eyes through its carotene, which needs ghee to be absorbed at all. Cooked carrot is markedly easier on Vata than raw."
+      },
+      "created_at": "2026-09-15T21:00:00Z"
+    }
+  ]
+}

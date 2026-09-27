@@ -39,6 +39,7 @@ def init_db():
         description TEXT,
         category TEXT DEFAULT 'General',
         servings INTEGER DEFAULT 4,
+        yield_grams INTEGER DEFAULT 0,
         prep_time TEXT DEFAULT '15 mins',
         cook_time TEXT DEFAULT '30 mins',
         total_time TEXT DEFAULT '45 mins',
@@ -94,6 +95,12 @@ def init_db():
         dosha_effect TEXT DEFAULT '',
         taste_rasa TEXT DEFAULT '',
         potency_virya TEXT DEFAULT '',
+        source TEXT DEFAULT 'custom',
+        source_code TEXT,
+        scientific_name TEXT DEFAULT '',
+        regional_names TEXT DEFAULT '',
+        nutrition_basis TEXT DEFAULT 'per 100 g',
+        energy_kj REAL,
         created_at DATETIME DEFAULT CURRENT_TIMESTAMP
     );
     """)
@@ -111,11 +118,29 @@ def init_db():
         "fiber": "TEXT DEFAULT ''",
         "iron": "TEXT DEFAULT ''",
         "zinc": "TEXT DEFAULT ''",
-        "ayurvedic_note": "TEXT DEFAULT ''"
+        "ayurvedic_note": "TEXT DEFAULT ''",
+        "yield_grams": "INTEGER DEFAULT 0",
     }
     for col, definition in new_recipe_cols.items():
         if col not in existing_recipe_cols:
             cursor.execute(f"ALTER TABLE recipes ADD COLUMN {col} {definition}")
+    conn.commit()
+
+    # Preserve the identity and units of externally imported pantry records.
+    # These nullable additions are safe for existing user-created ingredients.
+    cursor.execute("PRAGMA table_info(prepopulated_ingredients)")
+    existing_ing_cols = [row[1] for row in cursor.fetchall()]
+    import_cols = {
+        "source": "TEXT DEFAULT 'custom'",
+        "source_code": "TEXT",
+        "scientific_name": "TEXT DEFAULT ''",
+        "regional_names": "TEXT DEFAULT ''",
+        "nutrition_basis": "TEXT DEFAULT 'per 100 g'",
+        "energy_kj": "REAL",
+    }
+    for col, definition in import_cols.items():
+        if col not in existing_ing_cols:
+            cursor.execute(f"ALTER TABLE prepopulated_ingredients ADD COLUMN {col} {definition}")
     conn.commit()
 
     # Schema Migrations: Check prepopulated_ingredients columns
@@ -145,6 +170,12 @@ def init_db():
             dosha_effect TEXT DEFAULT '',
             taste_rasa TEXT DEFAULT '',
             potency_virya TEXT DEFAULT '',
+            source TEXT DEFAULT 'custom',
+            source_code TEXT,
+            scientific_name TEXT DEFAULT '',
+            regional_names TEXT DEFAULT '',
+            nutrition_basis TEXT DEFAULT 'per 100 g',
+            energy_kj REAL,
             created_at DATETIME DEFAULT CURRENT_TIMESTAMP
         )
         """)
@@ -154,6 +185,14 @@ def init_db():
         cursor.execute("SELECT COUNT(*) FROM prepopulated_ingredients")
         if cursor.fetchone()[0] == 0:
             seed_ingredients(conn)
+
+    # Create this after a possible legacy-table rebuild, which drops indexes.
+    cursor.execute("""
+        CREATE UNIQUE INDEX IF NOT EXISTS idx_pantry_source_code
+        ON prepopulated_ingredients(source, source_code)
+        WHERE source_code IS NOT NULL
+    """)
+    conn.commit()
 
     # Check if starter recipes need seeding
     cursor.execute("SELECT COUNT(*) FROM recipes")
@@ -722,7 +761,7 @@ def get_all_recipes(search_query=None, category=None):
     cursor = conn.cursor()
 
     query = """
-        SELECT id, title, description, category, servings, prep_time, cook_time, total_time,
+        SELECT id, title, description, category, servings, yield_grams, prep_time, cook_time, total_time,
                calories, protein, carbs, fat, fiber, iron, zinc, ayurvedic_note, image_url, notes,
                created_at, updated_at
         FROM recipes
@@ -775,7 +814,7 @@ def get_recipe_by_id(recipe_id):
     cursor = conn.cursor()
 
     cursor.execute("""
-        SELECT id, title, description, category, servings, prep_time, cook_time, total_time,
+        SELECT id, title, description, category, servings, yield_grams, prep_time, cook_time, total_time,
                calories, protein, carbs, fat, fiber, iron, zinc, ayurvedic_note, image_url, notes,
                created_at, updated_at
         FROM recipes
@@ -815,14 +854,15 @@ def create_recipe(data, conn=None):
 
     cursor.execute("""
         INSERT INTO recipes (
-            title, description, category, servings, prep_time, cook_time, total_time,
+            title, description, category, servings, yield_grams, prep_time, cook_time, total_time,
             calories, protein, carbs, fat, fiber, iron, zinc, ayurvedic_note, image_url, notes
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     """, (
         data.get("title", "Untitled Recipe"),
         data.get("description", ""),
         data.get("category", "General"),
         int(data.get("servings", 4) or 4),
+        max(0, int(data.get("yield_grams", 0) or 0)),
         data.get("prep_time", "15 mins"),
         data.get("cook_time", "30 mins"),
         data.get("total_time", "45 mins"),
@@ -896,6 +936,7 @@ def update_recipe(recipe_id, data):
             description = ?,
             category = ?,
             servings = ?,
+            yield_grams = ?,
             prep_time = ?,
             cook_time = ?,
             total_time = ?,
@@ -916,6 +957,7 @@ def update_recipe(recipe_id, data):
         data.get("description", ""),
         data.get("category", "General"),
         int(data.get("servings", 4) or 4),
+        max(0, int(data.get("yield_grams", 0) or 0)),
         data.get("prep_time", "15 mins"),
         data.get("cook_time", "30 mins"),
         data.get("total_time", "45 mins"),
@@ -992,7 +1034,8 @@ def get_prepopulated_ingredients(query=None, category=None):
         SELECT id, name_en, name_hi, name_mr, category,
                calories_per_100g, protein, carbs, fat, fiber,
                zinc, iron, calcium, micronutrients,
-               ayurvedic_significance, dosha_effect, taste_rasa, potency_virya
+               ayurvedic_significance, dosha_effect, taste_rasa, potency_virya,
+               nutrition_basis
         FROM prepopulated_ingredients
         WHERE 1=1
     """
